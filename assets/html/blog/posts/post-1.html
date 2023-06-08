@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../css/main.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="icon" href="../../../images/logo/logo.png" type="image/x-icon">
+    <title>Validus</title>
+</head>
+<body>
+    <div id="layer_mobile" class="layer_mobile"></div>
+    <div id="nav-mobile" class="nav_moblie">
+        <div class="nav_logo">
+            <div class="logo">
+                <img src="../../../images/logo/logo-Full-black.png" alt="logo">
+            </div>
+        </div>
+        <ul  class="nav_mobile_list">
+            <li class="list_item home">
+                <div class="list_item_child d-flex-al-center-jus-start ">
+                    <a href="../../../../index.html" class="Changa-Medium-16-20">Home</a>
+                    <span class="icon-chevron-right rotate-90"></span>
+                </div>
+                <div class="home-child">
+                    <ul class="home-list">
+                        <li class="home-item"><a href="../../../../index.html" class="Changa-Medium-16-20">Home</a></li>
+                        <li class="home-item blog">
+                            <a href="../blog.html">Blog</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                            <div class="blog-child">
+                                <ul class="post-list">
+                                    <li class="post-item"><a href="post-1.html" class="Changa-Medium-16-20">Post-1</a></li>
+                                    <li class="post-item"><a href="#">Post-2</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list_item">
+                <div class="list_item_child d-flex-al-center-jus-start ">
+                    <a href="#" class="Changa-Medium-16-20">Company</a>
+                    <span class="icon-chevron-right rotate-90"></span>
+                </div>
+            </li>
+            <li class="list_item">
+                <div class="list_item_child d-flex-al-center-jus-start ">
+                    <a href="#" class="Changa-Medium-16-20">Services & Industries</a>
+                    <span class="icon-chevron-right rotate-90"></span>
+                </div>
+            </li>
+            <li class="list_item">
+                <div class="list_item_child d-flex-al-center-jus-start ">
+                    <a href="#" class="Changa-Medium-16-20">News & Media</a>
+                    <span class="icon-chevron-right rotate-90"></span>
+                </div>
+            </li>
+            <li class="list_item">
+                <div class="list_item_child d-flex-al-center-jus-start ">
+                    <a href="#" class="Changa-Medium-16-20">Shop</a>
+                    <span class="icon-chevron-right rotate-90"></span>
+                </div>
+            </li>
+        </ul>
+        <button id="quit" class="nav_quit">
+            <span class="icon-cross"></span>
+        </button>
+    </div>  
+    <div id="nav-cart" class="nav_cart">
+        <div class="cart-top d-flex-al-center-jus-between">
+            <button class="cart-item Changa-Medium-16-20">CART (0 ITEM)</button>
+            <button class="nav_quit">
+                <span class="icon-cross"></span>
+            </button>
+        </div>
+        <div class="cart-bottom">
+            <span class="icon-cart"></span>
+            <p> No products in the cart.</p>
+        </div>
+    </div>
+    <div id="search"></div>
+    <div id="search-child">
+        <input name="search" type="text" placeholder="search ...">
+    </div>
+    <header id="main-header">
+        <div class="wrapper-header-post ">
+            <div class="header-top header-top-post d-flex-al-center-jus-between container-fluid">
+                <div class="wrapper-logo">
+                    <img src="../../../images/logo/logo-Full-black.png" alt="logo-image">
+                </div>
+                <div class="wrapper-menu d-flex-al-center">
+                    <ul class="menu-list d-flex-al-center-jus-start">
+                        <li class="menu-item home">
+                            <a href="../../../../index.html">Home</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                            <div class="home-child ">
+                                <ul class="home-list ">
+                                    <li class="home-item"><a href="../../../../index.html">Home</a></li>
+                                    <li class="home-item blog d-flex-al-center-jus-between">
+                                        <a href="../blog.html">Blog</a>
+                                        <span class="icon-chevron-right rotate-90"></span>
+                                        <div class="blog-child ">
+                                            <ul class="blog-list ">
+                                                <li class="blog-item"><a href="post-1.html">Post 1</a></li>
+                                                <li class="blog-item"><a href="#">Post 2</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="home-item"><a href="#"></a></li>
+                                    <li class="home-item"><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Company</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Services & Industries</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">News & Media</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Shop</a>
+                            <span class="icon-chevron-right rotate-90"></span>
+                        </li>
+                        <li class="menu-item search-cart d-flex">
+                            <div class="se-car-item" id="nav_search">
+                                <span class="icon-search"></span>
+                            </div>
+                            <div class="se-car-item  cart-click" id="nav_cart">
+                                <span class="icon-cart"></span>
+                                <div class="cart-click-notice" >
+                                    <p  class="Roboto-Regular-12">0</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="wrapper-contact d-flex-al-center-jus-between">
+                    <div class="wrapper-phone d-flex-al-center">
+                        <span class="icon-phone"></span>
+                        <div class="phone-number">
+                            <a href="#">+201061245741</a>
+                        </div>
+                    </div>
+                    <button class="btn-get">Get A Quote</button>
+                </div>
+                <div class="nav_menu_res ">
+                    <button id="nav-res" class="nav_res d-flex-al-center-jus-start">
+                        <span class="icon-menu black"></span>
+                        <img src="../../../images/logo/logo-text-black.png" alt="">
+                    </button>   
+                </div>
+                <div class="cart_res ">
+                    <button id="nav_cart" class="cart_res cart-click black Roboto-Bold-15 d-flex-al-center-jus-start">
+                        <span class="icon-cart black"></span>
+                        CART
+                    </button>   
+                </div>
+            </div>
+            <div class="header-bottom-post">
+                <div class="breadcrumb container">
+                    <div class=" wrapper-breadcrumb">
+                        <ul class="breadcrumb-list d-flex-al-center-jus-start-wrap">
+                            <li class="breadcrumb-item">
+                                <a href="../../../../index.html">Home</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <a href="../blog.html">Blog</a>
+                            </li>
+                            <li class="breadcrumb-item">
+                                <span class="breadcrumb-entry">New Factory Receives The KOBAH Award For A True Construction Excellence</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main-post" class="container">
+        <div class="d-flex-jus-between wrapper-main-post">
+            <div id="content" >
+                <div class="blog">
+                    <div class="image">
+                        <img src="../../../images/blog/img-1.png" alt="">
+                    </div>
+                    <div class="date">
+                        <div class="day">
+                            <p>22</p>
+                        </div>
+                        <div class="month-year">
+                            <p>Jan 2023</p>
+                        </div>
+                    </div>
+                    <div class="blog-item-content">
+                        <div class="blog-about">
+                            <div class="about-author d-flex-al-center-jus-start">
+                                <p class="orange">industry, Insights</p>
+                                <p class="center black">Mike Dooley</p>
+                                <p class="gray">Comments: <span class="orange">2</span></p>
+                            </div>
+                            <div class="about-content">
+                                <div class="about-content-tittle">
+                                    <p>New Factory Receives Great Award For A True Construction Excellence</p>
+                                </div>
+                                <p>Economic development has long been a focus of economic strategies, but it is only in the last few decades that sustainability has risen to the center of economic discourse and acquired substantial significance. Environmental conservation and social inclusion have made inroads into modern economics in recent times. Economic development cannot be sustained without social equality and environmental sustainability, it has become more obvious.
+                                </p>
+                                <p>Environmental sustainability is the route to the world we desire for everybody, stated former UN Secretary-General Ban Ki-moon. It provides a framework for achieving economic development, social fairness, environmental responsibility, and improved governance.</p>
+                                <div class="about-image d-flex-al-center-jus-between">
+                                    <div class="about-image-item col-6"><img src="../../../images/blog/post-content/img-1.png" alt=""></div>
+                                    <div class="about-image-item col-6"><img src="../../../images/blog/post-content/img-2.png" alt=""></div>
+                                </div>
+                                <p>It is often assumed that when people's fundamental requirements are met, they develop a desire to preserve the ecosystem. However, natural resources may have already been harmed at that point; consequently, it is critical that emerging countries recognize the need of environmental conservation. Environmental deterioration affects the whole planet, providing a health threat to many countries. As a result, it is critical to give it equal weight. With escalating levels of dynamic disaster risk coming from social polarization, rapidly rising poverty levels, urban conflict and violence, extremism, natural disasters, and climate change. Today's primary concerns are framed within the social context.
+                                </p>
+                                <p>These issues have an impact on planning and practices, prompting a reconsideration reworking of present planning methodologies in order to address this terrible societal situation. To establish strategies of sustainable development, it is widely agreed that a triad model, in which ecological is intertwined with the economic and social, is essential.</p>
+                            </div>
+                        </div>
+                        <div class="blog-share d-flex-jus-between">
+                            <div class="blog-share-item">
+                                <p>Post Tags:</p>
+                                <div class="wrapper-btn-tag d-flex-al-center-jus-start-wrap">
+                                    <button class="tag-item">
+                                        <p>Warehousing</p>
+                                    </button>
+                                    <button class="tag-item">
+                                        <p>Retail</p>
+                                    </button>
+                                    <button class="tag-item">
+                                        <p>Commercial</p>
+                                    </button>
+                                    <button class="tag-item">
+                                        <p>Cargo</p>
+                                    </button>
+                                    <button class="tag-item">
+                                        <p>Solutions</p>
+                                    </button>
+                                    <button class="tag-item">
+                                        <p>Company</p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="blog-share-item">
+                                <p>Share:</p>
+                                <div class="right">
+                                    <div class="wrap-icon d-flex-al-center-jus-center">
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="item_child">
+                                                    <span class="icon-facebook"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="item_child">
+                                                    <span class="icon-twitter"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="item">
+                                                <div class="item_child">
+                                                    <span class="icon-linkedin"></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="item_child">
+                                                <i class="fa-brands fa-twitter fa-xs"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#">
+                                        <div class="item">
+                                            <div class="item_child">
+                                                <i class="fa-brands fa-linkedin-in fa-xs"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pagination-blog d-flex-jus-between">
+                    <div class="prev pagination-item d-flex-al-center-jus-between">
+                        <button id="prev" class="prev">
+                            <span class="icon-arrow-Left"></span> 
+                        </button>
+                        <p>Prev Post</p>
+                    </div>
+                    <div class="next pagination-item d-flex-al-center-jus-between">
+                        <p>Next Post</p>
+                        <button id="next" class="next">
+                            <span class="icon-arrow-Right"></span>
+                        </button>
+                    </div>
+                </div>
+                <div class="author-inf d-flex">
+                    <div class="image">
+                        <img src="../../../images/blog/post-content/author-1.png" alt="">
+                    </div>
+                    <div class="author-about">
+                        <div class="author-name">
+                            <p>Mike Dooley</p>
+                        </div>
+                        <div class="author-text">
+                            <p>Founded by Begha over many cups of tea at her kitchen table in 2009, our brand promise is simple: to provide powerful digital marketing solutions to small and medium.</p>
+                        </div>
+                        <div class="wrap-icon d-flex-al-center-jus-start">
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-facebook"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-linkedin"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="comments" class="comments">
+                    <div class="comment-list-wrap">
+                        <h2 class="comments-tittle tittle">2 Comments</h2>
+                        <ul class="comment-list">
+                            <li class="comment-item">
+                                <div class="comment-body">
+                                    <div class="comment-inner">
+                                        <div class="comment-image">
+                                            <img src="../../../images/blog/post-content/avt-comment/avt-1.png" alt="">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h4 class="comment-tittle">Richard Muldoone</h4>
+                                            <div class="comment-meta">
+                                                <span class="comment-date">Feb 28, 2023 - 08:07 pm</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                <p>The example about the mattress sizing page you mentioned in the last WBF can be a perfect example of new keywords and content, and broadening the funnel as well. I can only imagine the sale numbers if that was the site of a mattress selling company.</p>
+                                            </div>
+                                            <button class="btn-reply d-flex-al-center">
+                                                <span class="icon-arrow-Right"></span>
+                                                <p class="orange">Reply</p>
+                                            </button>
+                                            <ul class="comment-list">
+                                                <li class="comment-item">
+                                                    <div class="comment-body">
+                                                        <div class="comment-inner">
+                                                            <div class="comment-image">
+                                                                <img src="../../../images/blog/post-content/avt-comment/avt-1_1.png" alt="">
+                                                            </div>
+                                                            <div class="comment-content">
+                                                                <h4 class="comment-tittle">Mike Dooley</h4>
+                                                                <div class="comment-meta">
+                                                                    <span class="comment-date">Feb 28, 2023 - 08:22 pm</span>
+                                                                </div>
+                                                                <div class="comment-text">
+                                                                    <p>Sizing page you mentioned in the last WBF can be a perfect example of new keywords and content, and broadening the funnel as well. I can only imagine the sale numbers if that was the site of a mattress selling company.</p>
+                                                                </div>
+                                                                <button class="btn-reply d-flex">
+                                                                    <span class="icon-arrow-Right"></span>
+                                                                    <p class="orange">Reply</p>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="comment-item">
+                                <div class="comment-body">
+                                    <div class="comment-inner">
+                                        <div class="comment-image">
+                                            <img src="../../../images/blog/post-content/avt-comment/avt-2.png" alt="">
+                                        </div>
+                                        <div class="comment-content">
+                                            <h4 class="comment-tittle">Chris Wensel</h4>
+                                            <div class="comment-meta">
+                                                <span class="comment-date">Feb 28, 2023 - 09:38 pm</span>
+                                            </div>
+                                            <div class="comment-text">
+                                                <p>The example about the mattress sizing page you mentioned in the last WBF can be a perfect example of new keywords and content, and broadening the funnel as well. I can only imagine the sale numbers if that was the site of a mattress selling company.</p>
+                                            </div>
+                                            <button class="btn-reply d-flex">
+                                                <span class="icon-arrow-Right"></span>
+                                                <p class="orange">Reply</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reply">
+                    <div class="reply-tittle">
+                        <p class="tittle">Leave A Reply</p>
+                    </div>
+                    <div class="reply-inf d-flex-jus-between-wrap">
+                        <div class="wrap-input d-flex-al-center">
+                            <input type="text" id="name" name="name" placeholder="Name">
+                                <label class="Changa-Medium-16-20" for="name" id="empty-name">(*)</label>
+                                <label class="Changa-Medium-16-20" for="name" id="valid-name">(*)</label>
+                            </div>
+                        <div class="wrap-input d-flex-al-center">
+                            <input type="text" id="email" name="email" placeholder="Email">
+                                <label class="Changa-Medium-16-20" for="email" id="empty-email">(*)</label>
+                                <label class="Changa-Medium-16-20" for="email" id="valid-email">(*)</label>
+                            </div>
+                        <div class="wrap-input d-flex-al-center">
+                            <input type="text" id="website" name="website" placeholder="Website">
+                                <label class="Changa-Medium-16-20" for="website" id="empty-website">(*)</label>
+                                <label class="Changa-Medium-16-20" for="website" id="valid-website">(*)</label>
+                        </div>
+                    </div>
+                    <input type="text" id="comment" name="comment" placeholder="Comment">
+                        <label class="Changa-Medium-16-20" for="comment" id="empty-comment">(*)</label>
+                        <label class="Changa-Medium-16-20" for="comment" id="valid-comment">(*)</label>
+                    <button class="btn-sub d-flex-al-center-jus-between" type="submit" id="btn_submit">
+                        <p>Submit Your Request</p>
+                        <div class="chevron">
+                            <span class="icon-chevron-right"></span>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <div id="sidebar">
+                <div class="search">
+                    <p>Search</p>
+                    <div class="input-wrapper">
+                        <input type="text" value="" placeholder="Search...">
+                        <span class="icon-search"></span>
+                    </div>
+                </div>
+                <section class="posts">
+                    <p class="tittle-sidebar">Recent Post</p>
+                    <div class="post-item d-flex">
+                        <div class="post-image">
+                            <img src="../../../images/blog/img-2.png" alt="">
+                        </div>
+                        <div class="post-about">
+                            <div class="post-day Roboto-Regular-13">
+                                <p>Jan 25, 2023</p> 
+                            </div>
+                            <div class="post-text">
+                                <p class="Changa-Medium-16-20-mar20"> Certifying Our Leaders As Management Specialists True</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-item d-flex">
+                        <div class="post-image">
+                            <img src="../../../images/blog/img-3.png" alt="">
+                        </div>
+                        <div class="post-about">
+                            <div class="post-day Roboto-Regular-13">
+                                <p> Jan 30, 2023</p>
+                            </div>
+                            <div class="post-text">
+                                <p class="Changa-Medium-16-20">Experts Share Eleven Must To Do Safety Practices On The</p> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-item d-flex">
+                        <div class="post-image">
+                            <img src="../../../images/blog/img-5.png" alt="">
+                        </div>
+                        <div class="post-about">
+                            <div class="post-day Roboto-Regular-13">
+                                <p> Feb 07, 2023</p>
+                            </div>
+                            <div class="post-text">
+                                <p class="Changa-Medium-16-20">To Harness World’s Energy Resources By Joining ADEE All</p> 
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="categories">
+                    <p class="tittle-sidebar">Categories</p>
+                    <button class="categories-item d-flex-al-center-jus-between">
+                        <div class="categories-text">
+                            <p class="Roboto-Bold-15">Oil & Gas Energy</p>
+                        </div>
+                        <div class="categories-notice d-flex-al-center-jus-center">
+                            <label>2</label> 
+                        </div>
+                    </button>
+                    <button class="categories-item d-flex-al-center-jus-between">
+                        <div class="categories-text">
+                            <p class="Roboto-Bold-15">Industrial Construction</p>
+                        </div>
+                        <div class="categories-notice d-flex-al-center-jus-center">
+                            <label>5</label> 
+                        </div>
+                    </button>
+                    <button class="categories-item d-flex-al-center-jus-between">
+                        <div class="categories-text">
+                            <p class="Roboto-Bold-15">Mechanical Engineering</p>
+                        </div>
+                        <div class="categories-notice d-flex-al-center-jus-center">
+                            <label>1</label> 
+                        </div>
+                    </button>
+                    <button class="categories-item d-flex-al-center-jus-between">
+                        <div class="categories-text">
+                            <p class="Roboto-Bold-15">Auto Manufacturing</p>
+                        </div>
+                        <div class="categories-notice d-flex-al-center-jus-center">
+                            <label>4</label> 
+                        </div>
+                    </button>
+                    <button class="categories-item d-flex-al-center-jus-between">
+                        <div class="categories-text">
+                            <p class="Roboto-Bold-15">Industrial Chemicals</p>
+                        </div>
+                        <div class="categories-notice d-flex-al-center-jus-center">
+                            <label>3</label> 
+                        </div>
+                    </button>
+                </section>
+                <section class="tags">
+                    <p class="tittle-sidebar">Tags</p>
+                    <div class="wrapper-btn-tag d-flex-al-center-jus-start-wrap">
+                        <button class="tag-item">
+                            <p>Warehousing</p>
+                        </button>
+                        <button class="tag-item">
+                            <p>Retail</p>
+                        </button>
+                        <button class="tag-item">
+                            <p>Commercial</p>
+                        </button>
+                        <button class="tag-item">
+                            <p>Cargo</p>
+                        </button>
+                        <button class="tag-item">
+                            <p>Solutions</p>
+                        </button>
+                        <button class="tag-item">
+                            <p>Company</p>
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="wrap-footer-top">
+            <div class="container footer-top">
+                <div class="top row">
+                    <div class="top-item col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wrapper-logo-footer ">
+                            <img src="../../../images/logo/logo-Full.png" alt="logo-image">
+                        </div>
+                    </div>
+                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p>Company</p>
+                        <ul class="list">
+                            <li class="list_item">
+                                <a href="#">About Us</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Meet Our Team</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">News & Media</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Case Studies</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Contacs</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p>Services</p>
+                        <ul class="list">
+                            <li class="list_item">
+                                <a href="#">Oil & Gas Energy</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Industrial Constrauction</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Mechanical Engineering</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Automotive Manufacturing</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Industrial Chemicals</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Bridge Construction</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p>Industries</p>
+                        <ul class="list">
+                            <li class="list_item">
+                                <a href="#">Retail & Consumer</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Sciences & Healthcare</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Industrial & Chemical</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Power Generation</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Food & Beverage</a>
+                            </li>
+                            <li class="list_item">
+                                <a href="#">Oil & Gas</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="top-item col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <p>Quick Contact</p>
+                        <p class="address .text-al-left">2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
+                        <button class="d-flex-al-center-jus-start icon email">
+                            <span class="icon-email"></span>
+                            <p>Validus@7oroof.com</p>
+                        </button>
+                        <button class="d-flex-al-center-jus-start icon footer-phone">
+                            <span class="icon-phone"></span>
+                            <p>02 01061245741</p>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-footer-bottom">
+            <div class="container footer-bottom">
+                <div class="row bottom">
+                    <div class="bottom-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="bottom-list d-flex-al-center-jus-start-wrap">
+                            <li class="bottom-list-item col-xs-12"><a href="#">Privacy Statement</a></li>
+                            <li class="bottom-list-item col-xs-12"><a href="#">Terms & Conditions</a></li>
+                            <li class="bottom-list-item col-xs-12"><a href="#">Privacy Policy</a></li>
+                            <li class="bottom-list-item col-xs-12"><a href="#">Sitemap</a></li>
+                        </ul>
+                        <p>©2023 Validus, All Rights Reserved. With Love by <span>7oroof.com</span> </p>
+                    </div>
+                    <div class=" d-flex-al-center-jus-end bottom-item col-xl-6 col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wrap-icon d-flex-al-center-jus-center">
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-facebook"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-twitter"></span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#">
+                                <div class="item">
+                                    <div class="item_child">
+                                        <span class="icon-linkedin"></span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <button id="arrow" class="to-top">
+                            <p>Back To Top</p>
+                            <span class="icon-arrow-Right-Up"></span>
+                        </button>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+<script src="../../../js/main.js"></script>
+<script src="../../../js/post.js"></script>

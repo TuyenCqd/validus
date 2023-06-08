@@ -1,0 +1,279 @@
+@import 'class.scss';
+.swiper-button-item{
+    width: 100px;
+    height: 100px;
+    &::after{
+        content: '';
+    }
+}
+.button-social-like{
+    height: 68px !important;
+    width: 68px !important;
+    border-radius: 50%;
+    background-color: $color-white;
+    position: relative;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    &::before{
+        content: '';
+        height: 88px;
+        width: 88px;
+        background-color: $color-white;
+        position: absolute;
+        @extend .absolute-50-50;
+        z-index: -1;
+        border-radius: 50%;
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    &:hover{
+        &::before{
+            content: '';
+            opacity: 1;
+        }
+    }
+}
+#social_h{
+    .swiper-wrapper{
+        .swiper-slide{
+            &:nth-child(1){
+                .wrap-social{
+                    &-img{
+                        background-image: url(../images/main/social/img-1.png);
+                    }
+                    &-about{ 
+                        &::before{
+                            content: url(../images/main/social/img-1_1.png);
+                        }
+                    }
+                }
+            }
+            
+            &:nth-child(2){
+                .wrap-social{
+                    &-img{
+                        background-image: url(../images/main/social/img-2.png);
+                    }
+                    &-about{ 
+                        &::before{
+                            content: url(../images/main/social/img-2_1.png);
+                        }
+                    }
+                }
+            }
+            
+            &:nth-child(3){
+                .wrap-social{
+                    &-img{
+                        background-image: url(../images/main/social/img-3.png);
+                    }
+                    &-about{ 
+                        &::before{
+                            content: url(../images/main/social/img-3_1.png);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .swiper-button{    
+        &-prev{
+            left: 33% !important;
+            top: 20%;
+            @extend .swiper-button-item;
+            .button-social{
+                @extend .button-social-like;
+                span{
+                    &.icon-arrow-Left-long{
+                        opacity: 0;
+                    }
+                    &.icon-arrow-Left{
+                        opacity: 1;
+                    }
+                    &::before{
+                        color: $color-back-main;
+                        @extend .absolute-50-50;
+                    }
+                }
+            }
+            &:hover{
+                .button-social{
+                    border-color: $color-orange;
+                    span{
+                        &.icon-arrow-Left{
+                            opacity: 0;
+                        }
+                        &.icon-arrow-Left-long{
+                            opacity: 1;
+                        }
+                        &::before{
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+        }
+        &-next{
+            left: 39% !important;
+            top: 20%;
+            @extend .swiper-button-item;
+            .button-social{
+                @extend .button-social-like;
+                span{
+                    &.icon-arrow-Right-long{
+                        display: none;
+                    }
+                    &::before{
+                        color: $color-back-main;
+                        @extend .absolute-50-50;
+                    }
+                }
+            }
+            &:hover{
+                .button-social{
+                    border-color: $color-orange;
+                    span{
+                        &.icon-arrow-Right{
+                            display: none;
+                        }
+                        &.icon-arrow-Right-long{
+                            display: block;
+                        }
+                        &::before{
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.wrap_social_h{
+    grid-gap: unset !important;
+    .wrap-social{
+        &-img{
+            @extend .bg-img;
+        }
+        &-about{ 
+            position: relative;
+            padding: 110px;
+            background-color: $color-orange;
+            .social{
+                &-text{
+                    p{
+                        &:first-child{
+                            margin: 0 0 27px 0;
+                        }
+                    }
+                }
+                &-btn{
+                    gap: 30px;
+                    margin: 42px 0 0 0;
+                    button.wrap_about-btn{
+                        padding: 21px 30px 20px 30px;
+                        background-color: $color-white;
+                        transition: all 0.3s;
+                        .wrap-chevron{
+                            background-color: $color-back-main;
+                            transition: all 0.3s;
+                            span{
+                                &::before{
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                        &:hover{
+                            background-color: $color-back-main;
+                            .wrap-chevron{
+                                background-color: $color-white;
+                                span{
+                                    &::before{
+                                        color: $color-back-main;
+                                    }
+                                }
+                            }
+                            .text{
+                                p{
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                    }
+                    button.contact{
+                        padding: 25px 30px 24px 30px;
+                        height: 100%;
+                        background-color: $color-orange;
+                        border: 2px solid $color-white;
+                        border-radius: 3px;
+                    }
+                }
+            }
+            &::before{
+                position: absolute;
+                bottom: 0;
+                right: -70px;
+            }
+        }
+    }
+}
+.social{
+    &-tittle{
+        p{
+            display: block;
+            border-bottom: 2px solid #ff9e72;
+            padding: 0 0 20px 2px;
+        }
+        h2{
+            display: block;
+            padding: 25px 0 170px 6px;
+        }
+    }
+}
+@media only screen and (max-width: 1280px){
+    #social_h{
+        .swiper-button{    
+            &-prev{
+                left: 10% !important;
+                right: unset;
+                top: 20%;
+            }
+            &-next{
+                right: 10% !important;
+                left: unset;
+                top: 20%;
+            }
+        }
+    }
+    .wrap_social_h{
+        display: unset !important;
+        .wrap-social{
+            &-img{
+                height: 900px;
+            }
+            &-about{ 
+                position: relative;
+                padding: 110px 30px;
+                text-align: center;
+                .social{
+                    &-btn{
+                        justify-content: space-around;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .social{
+        &-tittle{
+            h2{
+                font-size: 55px;
+            }
+        }
+        &-btn{
+            .wrap-chevron{
+                gap: unset;
+            }
+        }
+    }
+}

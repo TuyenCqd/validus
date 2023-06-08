@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?tbzzcq');
+  src:  url('fonts/icomoon.eot?tbzzcq#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?tbzzcq') format('truetype'),
+    url('fonts/icomoon.woff?tbzzcq') format('woff'),
+    url('fonts/icomoon.svg?tbzzcq#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak-as: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-clock:before {
+  content: "\e909";
+  color: #f9f9f9;
+}
+.icon-location:before {
+  content: "\e90a";
+  color: #f9f9f9;
+}
+.icon-uniE90B:before {
+  content: "\e90b";
+  color: #ff5e14;
+}
+.icon-arrow-Left-long:before {
+  content: "\e90c";
+  color: #ff5e14;
+}
+.icon-arrow-Right-long:before {
+  content: "\e90d";
+  color: #ff5e14;
+}
+.icon-arrow-Left:before {
+  content: "\e900";
+  color: #fff;
+}
+.icon-arrow-Right:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-arrow-Right-Up:before {
+  content: "\e902";
+  color: #7d5bdc;
+}
+.icon-cart:before {
+  content: "\e903";
+  color: #fff;
+}
+.icon-email:before {
+  content: "\e905";
+  color: #7d5bdc;
+}
+.icon-minus:before {
+  content: "\e906";
+  color: #c7c7c7;
+}
+.icon-phone:before {
+  content: "\e907";
+  color: #f9f9f9;
+}
+.icon-search:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-chevron-right:before {
+  content: "\e904";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-plus:before {
+  content: "\ea0a";
+}
+.icon-minus1:before {
+  content: "\ea0b";
+}
+.icon-cross:before {
+  content: "\ea0f";
+}
+.icon-checkmark:before {
+  content: "\ea10";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin:before {
+  content: "\eaca";
+}

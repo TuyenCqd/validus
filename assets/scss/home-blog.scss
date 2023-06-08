@@ -1,0 +1,61 @@
+@import 'class.scss';
+.wrap-blog{
+    padding: 130px 0 90px 0;
+    .blog{
+        &-tittle{
+            h4{
+                margin: 26px 0 0 0;
+            }
+        }
+        &-child{
+            margin: 58px 0 39px 0;
+            gap: 40px;
+            .blog-item {
+                /**/
+               &:hover{
+                   > .image{
+                       > img {
+                           transform: translateX(0);
+                       }
+                   }
+               }
+           }
+           span.swiper-pagination-bullet {
+            visibility: hidden;
+        }
+        }
+        &-all{
+            p{
+                margin: 0 0 17px 0;
+            }
+            .wrap-all{
+                button.all{
+                    height: 68px;
+                    width: 68px;
+                    background-color: $color-orange;
+                    border-radius: 50%;
+                    transition: all 0.3s;
+                    span{
+                        &::before{
+                            color: $color-white;
+                            transition: all 0.3s;
+                            @extend .absolute-50-50;
+                        }
+                    }
+                    &:hover{
+                        transform: scale(1.25);
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1599px){
+    .wrap-blog{
+        .blog{
+            &-child{
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

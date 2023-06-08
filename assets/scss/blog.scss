@@ -1,0 +1,176 @@
+@import 'class.scss';
+.active{
+    background-color: $color-orange !important;
+}
+div.blog-item {
+    width: 400px;
+    height: 623px;
+    box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.5s;
+     /**/
+    .date{
+        position: absolute;
+        top: 22px;
+        left: 35px;
+        z-index: 10;
+        p{
+            margin: 0;
+            color: #fff;
+        }
+    }
+    .image{
+        position: relative;
+        z-index: 2;
+        &::after{
+            content: ' ';
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 4px;
+            z-index: 0;
+        }
+        img{
+            height: 100%;
+        }
+    }
+    .content {
+        padding: 35px 40px 0 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 100;
+        .tittle {
+            p{
+                margin: 0;
+            }
+        }
+        .meta {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0;
+            p{
+                margin: 0;
+                &:first-child{
+                    color: #ff5e14 !important;
+                }
+            }
+            span{
+                &::before{
+                    color: #c7c7c7;
+                }
+            }
+        }
+        .about{
+            p{
+                margin: 0;
+                color: #9b9b9b;
+            }
+        }
+        a{
+            button{
+                border: 0;
+                background-color: transparent;
+                display: flex;
+                gap: 10px;
+                justify-content: start;
+                align-items: center;
+                padding: 25px 0 30px 0;
+                transition: all 0.3s;
+                p{
+                    margin: 0;
+                }
+                .greater {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    border: 2px solid #ff5e14;
+                    position: relative;
+                    span{
+                        &::before{
+                            color: #000;
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                        }
+                    }
+                }
+                &:hover {
+                    cursor: pointer;
+                    transform: scale(1.25) translate(10px,0);
+                }
+            }
+        }
+    }
+    &:hover{
+        transform: translate(0, -20px);
+        > .image{
+            height: 100%;
+            transition: all 1s;
+            > img {
+                transform: translateX(-15%);
+                transition: all 0.3s;
+            }
+        }
+        .content {
+            p{
+                color: #fff;
+                transition: all 0.3s;
+            }
+            > a{
+                text-decoration: none;
+                button{
+                    .greater{
+                        background-color: #ff5e14 ;
+                        transition: all 0.3s;
+                        > i{
+                            color: #fff ;
+                            transition: all 0.3s;
+                        }
+                    } 
+                    p{
+                        color: #ff5e14 ;
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+    }
+}
+.wrap-blog-list{
+    padding: 110px 0 90px 0;
+    height: 100%;
+    .blog-list {
+        gap: 40px;
+    }
+    .blog-list-number{
+        margin-top: 40px;
+        gap: 20px;
+        .ctrl-list-number{
+            gap: 10px;
+        }
+        .pagination-item{
+            cursor: pointer;
+            height: 58px;
+            width: 58px;
+            border: none;
+            border-radius: 2px;
+            background-color: $color-back-main;
+            color: $color-white;
+        }
+        .ctrl-next{
+            &:hover{
+                background-color: $color-orange;
+            }
+        }
+    }
+}
+#blog_h{
+    h4{
+        line-height: 30px;
+    }
+}

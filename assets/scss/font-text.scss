@@ -1,0 +1,272 @@
+@import 'class.scss';
+@mixin fontText($fFamily, $fSize, $color){
+    font-family: $fFamily;
+    font-size: $fSize;
+    line-height: $fSize;
+    color: $color;
+}
+@font-face {
+    font-family: 'Changa-Bold';
+    src: url('../css/font-text/Changa-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Changa-Medium';
+    src: url('../css/font-text/Changa-Medium.ttf') format('truetype');
+}
+.Changa-Medium-16-20{
+    font-family: 'Changa-Medium' !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    &-mar20{
+        margin: 20px 0 0 0;
+    }
+}
+.Changa-Medium-24{
+    @include fontText('Changa-Medium',24px, $color-back-main);
+}
+.Changa-Medium-22{
+    @include fontText('Changa-Medium',22px, $color-white);
+}
+.changa-me-20{
+    @include fontText('Changa-Medium',20px, $color-back-main);
+}
+.nav_mobile_list{
+    a{
+        @extend .Changa-Medium-16-20;
+    }
+}
+    .about-content-tittle{
+        > p{
+            @include fontText('Changa-Medium',40px, $color-back-main);
+            line-height: 49px;
+        }
+    }
+    .tittle{
+        @include fontText('Changa-Medium',26px, $color-back-main);
+    }
+    .tittle-sidebar{
+        @include fontText('Changa-Medium',22px, $color-back-main);
+    }
+    div#sidebar > .search > p {
+        @include fontText('Changa-Medium',25px, $color-back-main);
+        line-height: 15px;
+    }
+@font-face {
+    font-family: 'Changa-Light';
+    src: url('../css/font-text/Changa-Light.ttf') format('truetype');
+}   
+    .Changa-Light-55{
+        @include fontText('Changa-Light',55px, $color-white);
+    }
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../css/font-text/Roboto-Bold.ttf') format('truetype');
+}
+    .Roboto-Bold-17{
+        @include fontText('Roboto-Bold',17px,$color-white);
+        line-height:27px; 
+    }
+    .Roboto-Bold-16{
+        @include fontText('Roboto-Bold',16px,$color-orange);
+        line-height: 14px;
+    }
+    .Roboto-Bold-15{
+        @include fontText('Roboto-Bold',15px,$color-white);
+    }
+    .Roboto-Bold-14{
+        @include fontText('Roboto-Bold',14px,$color-white);
+    }
+    .blog-share-item{
+        > p{
+            @include fontText('Roboto-Bold',14px,$color-back-main);
+        }
+    }
+    .pagination-item{
+        > p{
+            @include fontText('Roboto-Bold',15px,$color-back-main);
+        }
+    }
+    h4.comment-tittle {
+        @include fontText('Roboto-Bold',18px,$color-back-main);
+    }
+    button.btn-reply > p {
+        @include fontText('Roboto-Bold',14px,$color-orange);
+    }
+    .reply{
+        input{
+            &::placeholder{
+                @include fontText('Roboto-Bold',14px,$color-back-main);
+            }
+        }
+    }
+    button.btn-sub >  p {
+        @include fontText('Roboto-Bold',15px,$color-white);
+    }
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../css/font-text/Roboto-Regular.ttf') format('truetype');
+}
+    .Roboto-Regular-18{
+        @include fontText('Roboto-Regular',18px,$color-gray-footer-li );
+        line-height:29px; 
+    }
+    .Roboto-Regular-17{
+        @include fontText('Roboto-Regular',17px,$color-gray-footer-li );
+        line-height:27px; 
+    }
+    .Roboto-Regular-16{
+        @include fontText('Roboto-Regular',16px,$color-gray-footer-li );
+        line-height:26px; 
+    }
+    .Roboto-Regular-15{
+        @include fontText('Roboto-Regular',15px,$color-gray-footer-li);
+    }
+    .Roboto-Regular-13{
+        @include fontText('Roboto-Regular',13px,$color-gray-footer-li);
+    }
+    .Roboto-Regular-12{
+        @include fontText('Roboto-Regular',12px,$color-white);
+    }
+    .about-content{
+        > p{
+            @include fontText('Roboto-Regular',17px,$color-gray-footer-li);
+            line-height: 27px;
+        }
+    }
+    .tag-item{
+        > p{
+            @include fontText('Roboto-Regular',12px,$color-orange);
+        }
+    }
+    span.comment-date {
+        @include fontText('Roboto-Regular',12px,$color-gray-footer-li);
+    }
+    .author-text > p {
+        @include fontText('Roboto-Regular',15px,$color-gray-footer-li);
+        line-height: 26px;
+    }
+    .comment-text > p {
+        @include fontText('Roboto-Regular',15px,$color-gray-footer-li);
+        line-height: 25px;
+    }
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url('../css/font-text/Roboto-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Heebo-Regular';
+    src: url('../css/font-text/Heebo-Regular.ttf') format('truetype');
+}
+    
+h1{
+    @include fontText('Changa-Medium',85px, $color-white);
+    font-weight: unset;
+}
+h2{
+    @include fontText('Changa-Medium',75px, $color-white);
+    font-weight: unset;
+    line-height: 75px;
+}
+h3{
+    @include fontText('Changa-Medium',45px, $color-back-main);
+    font-weight: unset;
+    line-height: 55px;
+}
+h4{
+    @include fontText('Changa-Medium',42px, $color-back-main);
+    font-weight: unset;
+    line-height: 52px;
+}
+.top-item{
+    > p{
+        font-weight: unset;
+        @include fontText('Changa-Medium',19px, $color-white);
+    }
+}
+button.icon{
+    @include fontText('Changa-Medium',20px, $color-white);
+    line-height: 36px;
+    font-weight: unset;
+}
+    .author-name > p {
+        @include fontText('Changa-Medium',22px,$color-white);
+    }
+    .top-item{
+        p.address{
+            @include fontText('Heebo-Regular',14px,$color-white);
+            line-height: 24px;
+        }
+    }
+
+    li.menu-item{
+        a{
+            @include fontText('Roboto-Bold',15px,$color-white);
+        }
+    }
+    .wrapper-contact{
+        .btn-get{
+            @include fontText('Roboto-Bold',15px, $color-back-main);
+        }
+    }
+    button.to-top > p{
+        @include fontText('Roboto-Bold',14px, $color-back-main);
+    }
+    
+    li.list_item ,.bottom-list-item, .bottom-item {
+        a, p{
+            @include fontText('Roboto-Regular',14px,$color-gray-footer-li);
+            span{
+                color: $color-orange;
+            }
+        }
+    }
+    .bottom-list-item, .bottom-item {
+        a{
+            color: $color-back-main;
+            line-height: 30px
+        }
+        > p{
+            line-height: 30px
+        }
+    }
+    
+    .phone-number{
+        a{
+            @include fontText('Roboto-Medium',18px,$color-white);
+        }
+    }
+    
+    .date{
+        .day p{
+            @include fontText('Changa-Light',110px,$color-white);
+        }
+        .month-year p{
+            @include fontText('Roboto-Regular',13px,$color-white);
+        }
+    }
+    .blog-item{
+        .content{
+            .tittle p{
+                @include fontText('Roboto-Medium',22px,$color-back-main);
+                line-height: 29px;
+            }
+            .meta p{
+                @include fontText('Roboto-Regular',13px,$color-back-main);
+            }
+            .about p{
+                @include fontText('Roboto-Regular',15px,$color-gray-footer-li);
+                line-height: 25px;
+            }
+            a button p{
+                @include fontText('Roboto-Bold',15px,$color-back-main);
+            }
+        }
+    }
+    .breadcrumb-item{
+        a{
+            @include fontText('Roboto-Bold',14px,$color-back-main);
+        }
+        span{
+            @include fontText('Roboto-regular',14px,$color-gray-footer-li);
+        }
+    }

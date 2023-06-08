@@ -1,0 +1,224 @@
+@import 'class.scss';
+#about_h{
+    background-color: $color-white;
+    padding: 130px 0 125px 0;
+}
+.wrap_about_h{
+    .wrap_about{
+        &_tittle{
+            .about_tittle{
+                grid-column-start: 2;
+                grid-column-end: 9;
+                h3{
+                    margin: 15px 0 60px 0;
+                }
+            }
+        }
+        &_content{
+            .about_content{
+                &_text{
+                    grid-column-start: 1;
+                    grid-column-end: 6;
+                    .wrap-text{
+                        &-content{
+                            p.Roboto-Bold-17{
+                                margin: 0 0 27px 0;
+                            }
+                        }
+                        &-select{
+                            margin: 25px  0 0 0;
+                            gap: 30px;
+                            .about-select-item{
+                                button.select{
+                                    margin: 0 0 3px 0;
+                                    padding: 20px 10px 20px 0 ;
+                                    gap: 20px;
+                                    background-color: transparent;
+                                    border: 1px solid transparent;
+                                    border-bottom-color: #eaeaea;
+                                    p{
+                                        color: $color-back-main;
+                                    }
+                                    .wrap-chevron{
+                                        transition: all 0.3s;
+                                        background-color: $color-orange;
+                                        span{
+                                            &::before{
+                                                color: $color-white;
+                                                font-size: 10px;
+                                            }
+                                        }
+                                    }
+                                    &:last-child{
+                                        border-bottom-color: transparent;
+                                        padding-bottom: 0;
+                                        margin-bottom: 0;
+                                    }
+                                    &:hover{
+                                        p{
+                                            color: $color-orange;
+                                        }
+                                        .wrap-chevron{
+                                            background-color: transparent;
+                                            border: 2px solid $color-orange;
+                                            span{
+                                                &::before{
+                                                    color: $color-orange;
+                                                    font-size: 10px;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                &_img{
+                    cursor: pointer;
+                    position: relative;
+                    grid-column-start: 7;
+                    grid-column-end: 13;
+                    margin: 6px 0 0 0;
+                    background-image: url(../images/main/about/img-1.png);
+                    @extend  .bg-img;
+                    &::before{
+                        content: url(../images/main/about/world-map.png);
+                        position: absolute;
+                        top: -95px;
+                        right: -100px;
+                        opacity: 0.9;
+                        z-index: 2;
+                    }
+                    &::after{
+                        content: url(../images/main/about/play-button.png);
+                        position: absolute;
+                        top: -75px;
+                        right: -85px;
+                        z-index: 11;
+                    }
+                    .img-layer{
+                        background-color: rgba(0, 0, 0, 0.2);
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        z-index: 1;
+                        opacity: 1;
+                        transition: all 0.3s;
+                    }
+                    &:hover{
+                        .img-layer{
+                            opacity: 0;
+                        }
+                    }
+                }
+            }
+        }
+        &-btn{
+            margin: 49px 0 0 0;
+            background-color: $color-back-main;
+            &:hover{
+                background-color: $color-orange;
+                span{
+                    &::before{
+                        color: $color-orange;
+                    }
+                }
+            }
+        }
+    }
+}
+.wrap_about{
+    &-btn{
+        padding: 23px 30px;
+        transition: all 0.3s ease;
+        &:active {
+            box-shadow: 0 0 45px 15px rgba(0, 0, 0, 0.5);
+          }
+    }
+}
+@media only screen and (max-width: 1280px){
+    .wrap_about_h{
+        .wrap_about{
+            &_tittle{
+                display: unset;
+                text-align: center;
+            }
+            &_content{
+                display: unset;
+                .about_content{
+                    &_text{
+                        .wrap-text{
+                            &-content{
+                                text-align: center;
+                            }
+                            &-select{
+                                justify-content: space-around;
+                            }
+                        }
+                    }
+                    &_img{
+                        text-align: center;
+                        height: 412px;
+                        max-width: 612px;
+                        margin: 100px auto ;
+                    }
+                }
+            }
+            &-btn{
+                margin: 49px auto 0 auto;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 765px){
+    .wrap_about_h{
+        .wrap_about{
+            &_content{
+                .about_content{
+                    &_img{
+                        margin: 100px 40px;
+                        &::before{
+                            content: url(../images/main/about/world-map.png);
+                            position: absolute;
+                            top: -120px;
+                            right: -100px;
+                            opacity: 0.9;
+                            transform: scale(0.8);
+                        }
+                        &::after{
+                            content: url(../images/main/about/play-button.png);
+                            position: absolute;
+                            top: -85px;
+                            right: -85px;
+                            opacity: 0.9;
+                            transform: scale(0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .wrap_about_h{
+        .wrap_about{
+            &_content{
+                .about_content{
+                    &_img{
+                        &::before{
+                            content: url(../images/main/about/world-map.png);
+                            position: absolute;
+                            top: -150px;
+                            right: -150px;
+                            opacity: 0.9;
+                            transform: scale(0.5);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

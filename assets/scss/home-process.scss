@@ -1,0 +1,173 @@
+@import 'class.scss';
+
+#process_h{
+    position: relative;
+    padding: 104px 160px 108px 110px;
+    margin: -318px 0 0 160px;
+    background-color: $color-orange;
+}
+.wrap-process{
+    gap: 150px;
+    &-left{
+        margin-top: 6px;
+        flex: 5.230769;
+        .social-tittle{
+            margin-bottom: 27px;
+            p{
+                padding-bottom: 18px;
+                margin-bottom: 25px;
+            }
+        }
+        button.wrap_about-btn{
+            padding: 21px 30px 20px 30px;
+            margin-bottom: 154px;
+            background-color: $color-white;
+            transition: all 0.3s;
+            .wrap-chevron{
+                background-color: $color-back-main;
+                transition: all 0.3s;
+                span{
+                    &::before{
+                        color: $color-white;
+                    }
+                }
+            }
+            &:hover{
+                background-color: $color-back-main;
+                .wrap-chevron{
+                    background-color: $color-white;
+                    span{
+                        &::before{
+                            color: $color-back-main;
+                        }
+                    }
+                }
+                .text{
+                    p{
+                        color: $color-white;
+                    }
+                }
+            }
+        }
+        &-img{
+            height: 326px;
+            background-image: url(../images/main/process/worker.png);
+            @extend .bg-img;
+        }
+    }
+    &-right{
+        flex: 5.230769;
+        &-item{
+            gap: 49px;
+            &-number{
+                p{
+                    line-height: 52px;
+                }
+            }
+            &-about{
+                &-text{
+                    p{
+                        line-height: 25px;
+                    }
+                }
+                &-img{
+                    cursor: pointer;
+                    margin: 31px 0 62px 0 ;
+                    height: 271px;
+                    border: 2px solid transparent;
+                    transition: all 0.5s;
+                    background-image: url(../images/main/process/img-1.png);
+                    @extend .bg-img;
+                }
+            }
+            &:nth-child(2){
+                .wrap-process-right-item-about{
+                    &-img{
+                        background-image: url(../images/main/process/img-2.png);
+                    }
+                }
+            }
+            &:nth-child(3){
+                .wrap-process-right-item-about{
+                    &-img{
+                        background-image: url(../images/main/process/img-3.png);
+                    }
+                }
+            }
+            &:last-child{
+                .wrap-process-right-item-about{
+                    &-img{
+                        margin-bottom: 0 !important;
+                        background-image: url(../images/main/process/img-4.png);
+                    }
+                }
+            }
+            &:hover{
+                .wrap-process-right-item-about{
+                    &-img{
+                        border: 2px solid $color-white;
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1280px){
+    .wrap-process{
+        display: unset !important;
+        &-left{
+            margin-bottom: 60px;
+            text-align: center;
+            button.wrap_about-btn{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        &-right{
+            text-align: center;
+            &-item{
+                &-about{
+                    &-text{
+                        p{
+                            line-height: 25px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    #process_h{
+        padding: 104px 60px 108px 30px;
+        margin: -318px 0 100px 60px;
+    }
+    .wrap-process{
+        &-right{
+            &-item{
+                display: unset !important;
+                &-number{
+                    margin-bottom: 30px;
+                }
+                &-about{
+                    &-text{
+                        p{
+                            line-height: 25px;
+                        }
+                    }
+                } 
+            }
+        }
+    }
+}
+@media only screen and (max-width: 767px){
+    .wrap-process{
+        &-left{
+            .social-tittle{
+                p{
+                    line-height: 26px;
+                }
+            }
+        }
+    }
+}

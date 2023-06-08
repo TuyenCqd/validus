@@ -1,0 +1,28 @@
+@import 'class.scss';
+.header-bottom-blog{  
+    position: relative;
+    height: 100%;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+  }
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    // text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset,50px) !important;
+  }
+  .swiper-button-next {
+    right: var(--swiper-navigation-sides-offset,50px) !important;
+  }

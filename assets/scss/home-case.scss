@@ -1,0 +1,339 @@
+@import 'class.scss';
+
+.wrap-case{
+    &-top{
+        .case-top{
+            padding: 118px 0 52px 0;
+            &-text{
+                padding-top: 5px;
+                p{
+                    line-height: 27px;
+                    &:first-child{
+                        margin-bottom: 27px;
+                    }
+                }
+            }
+        }
+    }
+    &-center{
+        padding-bottom: 50px;
+        background-color: white;
+        border-bottom: 1px solid $color-gray-border;
+        .flickity-viewport {
+            height: 584px !important;
+            .flickity-slider{
+                left: 5px;
+            }
+        }
+        .flickity-page-dots {
+            text-align: start;
+            padding-left: 160px;
+            bottom: 33px;
+            .dot {
+                display: inline-block;
+                width: 20px;
+                height: 6px;
+                margin: 0 10px 0 0;
+                background: $color-back-main;
+                border-radius: 2px;
+                opacity: 1 ;
+                cursor: pointer;
+                &.is-selected {
+                    background: $color-orange;
+                    width: 30px;
+                }
+            }
+        }
+        .carousel{
+            .carousel-cell {
+                margin-right: 40px;
+                counter-increment: carousel-cell;
+                .case-item{
+                    cursor: pointer;
+                    margin: 0 auto;
+                    width: 400px;
+                    background-color: $color-white;
+                    position: relative;
+                    &-inf{
+                        position: absolute;
+                        top: 30px;
+                        left: 10%;
+                        padding: 14px 15px 15px 15px;
+                        background-color: $color-orange;
+                        border: 3px solid transparent;
+                        z-index: 10;
+                        transition: all 0.5s;
+                        &:hover{
+                            border-color: $color-orange;
+                            background-color: $color-white;
+                            p{
+                                color: $color-orange;
+                            }
+                        }
+                    }
+                    &-img{
+                        height: 300px;
+                    }
+                    &-about{
+                        padding: 36px 40px 33px 40px;
+                        background-color: $color-white;
+                        box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
+                        transition: all 0.5s;
+                        &-tittle{
+                            margin-bottom: 18px;
+                        }
+                        &-text{
+                            p{
+                                line-height: 25px;
+                            }
+                        }
+                    }
+                    &-plus{
+                        position: absolute;
+                        height: 68px;
+                        width: 68px;
+                        border-radius: 50%;
+                        background-color: $color-back-main;
+                        left: 50%;
+                        bottom: -87px;
+                        transform: translateX(-50%);
+                        opacity: 0;
+                        transition: all 0.5s;
+                        span{
+                            &::before{
+                                color: $color-white;
+                                font-size: 10px;
+                                @extend .absolute-50-50;
+                            }
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -7px;
+                            height: 85px;
+                            width: 85px;
+                            border-radius: 50%;
+                            background-color: transparent;
+                            border: 3px solid $color-orange;
+                            clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+                            z-index: -1;
+                        }
+                        &:hover{
+                            background-color: $color-orange;
+                        }
+                    }
+                    &:hover{
+                        .case-item-about{
+                            transform: translateY(-34px);
+                            padding-bottom: 74px;
+                        }
+                        .case-item-plus{               
+                            bottom: 0;
+                            opacity: 1;
+                            // &::after{
+                            //     transform: translate(0,0);
+                            // }
+                        }
+                    }
+                }
+                &:nth-child(1){
+                    .case-item{
+                    &-img{
+                        background-image: url(../images/main/case/img-1.png);
+                        @extend .bg-img;
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    .case-item{
+                    &-img{
+                        background-image: url(../images/main/case/img-2.png);
+                        @extend .bg-img;
+                        }
+                    }
+                }
+                &:nth-child(3){
+                    .case-item{
+                    &-img{
+                        background-image: url(../images/main/case/img-3.png);
+                        @extend .bg-img;
+                        }
+                    }
+                }
+                &:nth-child(4){
+                    .case-item{
+                    &-img{
+                        background-image: url(../images/main/case/img-4.png);
+                        @extend .bg-img;
+                        }
+                    }
+                }
+                &:nth-child(5){
+                    .case-item{
+                    &-img{
+                        background-image: url(../images/main/case/img-1.png);
+                        @extend .bg-img;
+                        }
+                    }
+                }
+            }
+            .flickity-button:disabled {
+                opacity: 1;
+                background-color: #e8e8e8;
+            }
+            >button{
+                cursor: pointer;
+                height: 58px ;
+                width: 58px;
+                top: unset;
+                bottom: -19px;
+                background-color: $color-orange;
+                &.previous {
+                    left: unset;
+                    right: 160px;
+                    &:before {
+                        @extend .absolute-50-50;
+                        content: url(../images/main/case/arrow-right.png);
+                        transition: all 0.5s;
+                        opacity: 1;
+                    }
+                    &::after {
+                        @extend .absolute-50-50;
+                        content: url(../images/main/case/arrow-right-long.png);
+                        transition: all 0.5s;
+                        opacity: 0;
+                    }
+                    &:hover{
+                        background-color: $color-orange;
+                        &::before {
+                            opacity: 0;
+                        }
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+                &.next {
+                    right: 238px;
+                    &:before {
+                        @extend .absolute-50-50;
+                        content: url(../images/main/case/arrow-left.png);
+                        transition: all 0.5s;
+                        opacity: 1;
+                    }
+                    &::after {
+                        @extend .absolute-50-50;
+                        content: url(../images/main/case/arrow-left-long.png);
+                        transition: all 0.5s;
+                        opacity: 0;
+                    }
+                    &:hover{
+                        background-color: $color-orange;
+                        &::before {
+                            opacity: 0;
+                        }
+                        &::after {
+                            opacity: 1;
+                        }
+                    }
+                }
+                .flickity-button-icon{
+                    display: none;
+                }
+            }
+        }
+    }
+    &-bottom{
+        .case-bottom{
+            padding: 62px 0;
+            &-text{
+                cursor: pointer;
+                p{
+                    line-height: 25px;
+                    span{
+                        position: relative;
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            height: 2px;
+                            width: 100%;
+                            background-color: $color-orange;
+                            left: 0;
+                            bottom: -2px;
+                        }
+                    }
+                }
+                &:hover{
+                    p{
+                        color: $color-orange;
+                    }
+                }
+            }
+            &-logo{
+                cursor: pointer;
+                transition: all 0.5s;
+                &:hover{
+                    transform: translateY(-20px);
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1280px){
+    .wrap-case{
+        &-top{
+            .case-top{
+                text-align: center;
+            }
+        }
+        &-center{
+            .carousel{
+                >button{
+                    bottom: -30px;
+                    &.previous {
+                        right: 30px;
+                        left: unset;
+                    }
+                    &.next {
+                        left: 30px;
+                        right: unset;
+                    }
+                }
+            }
+            .flickity-page-dots {
+                padding-left: 0;
+                text-align: center;
+                bottom: 0px;
+            }
+        }
+        &-bottom{
+            .case-bottom{
+                &-text{
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 575px){
+    .wrap-case{
+        &-top{
+            .case-top{
+                display: unset;
+            }
+        }
+        &-bottom{
+            .case-bottom{
+                display: unset;
+                &-text{
+                    margin: 30px auto;
+                }
+                &-logo{
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}

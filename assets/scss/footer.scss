@@ -1,0 +1,165 @@
+@import 'class.scss';
+.wrap-footer-top{
+    padding: 127px 0 91px 0;
+    background-color: $color-back-footer;
+    .footer-top{
+        .top{
+            .top-item{
+                .wrapper-logo-footer{
+                    padding: 3px 0 0 0;
+                }
+                p{
+                    margin-bottom: 42px;
+                }
+                ul.list{
+                    li.list_item{
+                        margin-bottom: 15px;
+                        > a:hover{
+                            color: $color-orange;
+                        }
+                    }
+                }
+                &:last-child{
+                    > p:nth-child(1){
+                        margin-bottom: 40px ;
+                    }
+                    > p:nth-child(2){
+                        margin-bottom: 12px ;
+                        cursor: pointer;
+                    }
+                    button{
+                        cursor: pointer;
+                        border: none;
+                        background-color: transparent;
+                        gap: 14px;
+                        p{
+                            color: $color-orange;
+                            margin: 0;
+                        }
+                        span{
+                            &::before{
+                                color: $color-orange;
+                            }
+                        }
+                    }
+                }
+                button{
+                    &:hover{
+                        span{
+                            animation: shake 0.3s infinite;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.wrap-footer-bottom{
+    position: relative;
+    &::before{
+        content: '';
+        position: absolute;
+        height: 6px;
+        width: calc(100% - 120px);
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: $color-orange
+    }
+    padding: 32px 0 30px 0;
+    .footer-bottom{
+        .bottom-item{
+            ul.bottom-list{
+                gap: 32px;
+                li.bottom-list-item{
+                    position: relative;
+                    &:last-child{
+                        &::after{
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+            &:last-child{
+                gap: 40px;
+                button.to-top {
+                    cursor: pointer;
+                    display: flex;
+                    border: none;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                    background-color: transparent;
+                    p{
+                        margin: 0;
+                    }
+                    > span::before{
+                        color: $color-orange;
+                        font-size: 44px;
+                    }
+                    &:hover{
+                        p{
+                            color: $color-orange;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.bottom-list-item+.bottom-list-item::before {
+    float: left;
+    padding-right: 20px;
+    color: $color-back-main;
+    content: "-" !important;
+}
+@media only screen and (max-width: 1200px){
+    .top-item{
+        text-align: center;
+        button{
+            margin: 0 auto;
+        }
+    }
+    .bottom-item{
+        .bottom-list{
+            justify-content: space-around;
+            margin-bottom: 20px;
+            .bottom-list-item{
+                &::after{
+                    right: -50% !important;
+                }
+            }
+        }
+        text-align: center;
+        justify-content: center !important;
+    }
+}
+@media only screen and (max-width: 575px){
+    .wrap-footer-top{
+        .footer-top{
+            .top{
+                display: unset;
+                .top-item{
+                    .wrapper-logo-footer{
+                        margin-bottom: 42px;
+                    }
+                }
+            }
+        }
+    }
+    
+.wrap-footer-bottom{
+    .footer-bottom{
+        .bottom{
+            display: unset;
+        }
+    }
+}
+    .bottom-list-item{
+        &::before{
+            display: none !important;
+        }
+    }
+}
+    
+
