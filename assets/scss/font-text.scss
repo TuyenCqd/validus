@@ -13,29 +13,49 @@
     font-family: 'Changa-Medium';
     src: url('../css/font-text/Changa-Medium.ttf') format('truetype');
 }
-.Changa-Medium-16-20{
-    font-family: 'Changa-Medium' !important;
-    font-size: 16px !important;
-    line-height: 20px !important;
-    &-mar20{
-        margin: 20px 0 0 0;
+    .Changa-Medium-16-20{
+        font-family: 'Changa-Medium' !important;
+        font-size: 16px !important;
+        line-height: 20px !important;
+        &-mar20{
+            margin: 20px 0 0 0;
+        }
+    }  
+    h1{
+        @include fontText('Changa-Medium',85px, $color-white);
+        font-weight: unset;
     }
-}
-.Changa-Medium-24{
-    @include fontText('Changa-Medium',24px, $color-back-main);
-}
-.Changa-Medium-22{
-    @include fontText('Changa-Medium',22px, $color-white);
-}
-.changa-me-20{
-    @include fontText('Changa-Medium',20px, $color-back-main);
-}
-.nav_mobile_list{
-    a{
-        @extend .Changa-Medium-16-20;
+    h2{
+        @include fontText('Changa-Medium',75px, $color-white);
+        font-weight: unset;
+        line-height: 75px;
     }
-}
-    .about-content-tittle{
+    h3{
+        @include fontText('Changa-Medium',45px, $color-back-main);
+        font-weight: unset;
+        line-height: 55px;
+    }
+    h4{
+        @include fontText('Changa-Medium',42px, $color-back-main);
+        font-weight: unset;
+        line-height: 52px;
+    }
+    h5{
+        font-weight: unset;
+        @include fontText('Changa-Medium',24px, $color-back-main);
+    }
+    .Changa-Medium-22{
+        @include fontText('Changa-Medium',22px, $color-white);
+    }
+    .changa-me-20{
+        @include fontText('Changa-Medium',20px, $color-back-main);
+    }
+    .nav_mobile_list{
+        a{
+            @extend .Changa-Medium-16-20;
+        }
+    }
+        .about-content-tittle{
         > p{
             @include fontText('Changa-Medium',40px, $color-back-main);
             line-height: 49px;
@@ -72,6 +92,11 @@
     }
     .Roboto-Bold-15{
         @include fontText('Roboto-Bold',15px,$color-white);
+    }
+    .btn-text{
+        // @extend .Roboto-Bold-15;
+        @include fontText('Roboto-Bold',15px,$color-back-main);
+        line-height: 11px;
     }
     .Roboto-Bold-14{
         @include fontText('Roboto-Bold',14px,$color-white);
@@ -157,26 +182,7 @@
     font-family: 'Heebo-Regular';
     src: url('../css/font-text/Heebo-Regular.ttf') format('truetype');
 }
-    
-h1{
-    @include fontText('Changa-Medium',85px, $color-white);
-    font-weight: unset;
-}
-h2{
-    @include fontText('Changa-Medium',75px, $color-white);
-    font-weight: unset;
-    line-height: 75px;
-}
-h3{
-    @include fontText('Changa-Medium',45px, $color-back-main);
-    font-weight: unset;
-    line-height: 55px;
-}
-h4{
-    @include fontText('Changa-Medium',42px, $color-back-main);
-    font-weight: unset;
-    line-height: 52px;
-}
+  
 .top-item{
     > p{
         font-weight: unset;
@@ -203,11 +209,11 @@ button.icon{
             @include fontText('Roboto-Bold',15px,$color-white);
         }
     }
-    .wrapper-contact{
-        .btn-get{
-            @include fontText('Roboto-Bold',15px, $color-back-main);
-        }
-    }
+    // .wrapper-contact{
+    //     .btn-get{
+    //         @include fontText('Roboto-Bold',15px, $color-back-main);
+    //     }
+    // }
     button.to-top > p{
         @include fontText('Roboto-Bold',14px, $color-back-main);
     }

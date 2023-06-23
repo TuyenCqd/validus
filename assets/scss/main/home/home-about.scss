@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 #about_h{
     background-color: $color-white;
     padding: 130px 0 125px 0;
@@ -27,50 +27,52 @@
                         }
                         &-select{
                             margin: 25px  0 0 0;
-                            gap: 30px;
-                            .about-select-item{
-                                button.select{
-                                    margin: 0 0 3px 0;
-                                    padding: 20px 10px 20px 0 ;
-                                    gap: 20px;
-                                    background-color: transparent;
-                                    border: 1px solid transparent;
-                                    border-bottom-color: #eaeaea;
+                            &-ul{
+                                gap: 30px;
+                            }
+                            &-item{
+                                width: calc((100% - 30px) / 2);
+                                cursor: pointer;
+                                margin: 0 0 3px 0;
+                                padding: 20px 10px 20px 0 ;
+                                gap: 20px;
+                                background-color: transparent;
+                                border: 1px solid transparent;
+                                border-bottom-color: #eaeaea;
+                                &:nth-last-child(1), &:nth-last-child(2){
+                                    border-bottom-color: transparent;
+                                }
+                                p{
+                                    color: $color-back-main;
+                                    line-height: 22px;
+                                }
+                                .wrap-chevron{
+                                    transition: all 0.3s;
+                                    background-color: $color-orange;
+                                    span{
+                                        &::before{
+                                            color: $color-white;
+                                            font-size: 10px;
+                                        }
+                                    }
+                                }
+                                &:hover{
                                     p{
-                                        color: $color-back-main;
+                                        color: $color-orange;
                                     }
                                     .wrap-chevron{
-                                        transition: all 0.3s;
-                                        background-color: $color-orange;
+                                        background-color: transparent;
+                                        border: 2px solid $color-orange;
                                         span{
                                             &::before{
-                                                color: $color-white;
+                                                color: $color-orange;
                                                 font-size: 10px;
-                                            }
-                                        }
-                                    }
-                                    &:last-child{
-                                        border-bottom-color: transparent;
-                                        padding-bottom: 0;
-                                        margin-bottom: 0;
-                                    }
-                                    &:hover{
-                                        p{
-                                            color: $color-orange;
-                                        }
-                                        .wrap-chevron{
-                                            background-color: transparent;
-                                            border: 2px solid $color-orange;
-                                            span{
-                                                &::before{
-                                                    color: $color-orange;
-                                                    font-size: 10px;
-                                                }
                                             }
                                         }
                                     }
                                 }
                             }
+                            
                         }
                     }
                 }
@@ -116,9 +118,8 @@
                 }
             }
         }
-        &-btn{
+        &_btn{
             margin: 49px 0 0 0;
-            background-color: $color-back-main;
             &:hover{
                 background-color: $color-orange;
                 span{
@@ -128,15 +129,6 @@
                 }
             }
         }
-    }
-}
-.wrap_about{
-    &-btn{
-        padding: 23px 30px;
-        transition: all 0.3s ease;
-        &:active {
-            box-shadow: 0 0 45px 15px rgba(0, 0, 0, 0.5);
-          }
     }
 }
 @media only screen and (max-width: 1280px){
@@ -155,7 +147,10 @@
                                 text-align: center;
                             }
                             &-select{
-                                justify-content: space-around;
+                                justify-content: space-between;
+                                &-item{
+                                    justify-content: center;
+                                }
                             }
                         }
                     }
@@ -167,7 +162,7 @@
                     }
                 }
             }
-            &-btn{
+            &_btn{
                 margin: 49px auto 0 auto;
             }
         }

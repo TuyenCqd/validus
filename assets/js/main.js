@@ -6,19 +6,6 @@ $(document).ready(function(){
         }, 500);
         return false;
       });
-//search
-    $('#nav_search').on('click', function() {
-        $('#search').addClass('active');
-    });
-    $('#search').on('click', function() {
-        $("#search").removeClass('active');
-    });
-    $('#nav_search').on('click', function() {
-        $('#search-child').addClass('active-child');
-    });
-    $('#search').on('click', function() {
-        $("#search-child").removeClass('active-child');
-    });
 //pagination
     var blogItems = $('.blog-list .blog-item');
     var paginationItems = $('.ctrl-number-item button');
@@ -60,6 +47,19 @@ $(document).ready(function(){
           blogItems.hide().slice(startIndex, endIndex).show();
         }
       });  
+  //search
+      $('#nav_search').on('click', function() {
+          $('#search').addClass('active');
+      });
+      $('#search').on('click', function() {
+          $("#search").removeClass('active');
+      });
+      $('#nav_search').on('click', function() {
+          $('#search-child').addClass('active-child');
+      });
+      $('#search').on('click', function() {
+          $("#search-child").removeClass('active-child');
+      });
     //nav-moblie 
     $("#nav-res").on("click", function() {
       $("#nav-mobile").addClass("show");
@@ -84,6 +84,8 @@ $(document).ready(function(){
     $(".nav_quit").on("click", function() {
       $("#nav-cart").removeClass('show');
       $("#layer_mobile").removeClass('show');
+      $("#search").removeClass('active');
+      $("#search-child").removeClass('active-child');
     });
     
     $("#layer_mobile").on("click", function() {
@@ -95,12 +97,14 @@ $(document).ready(function(){
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+      }
+      ,
       autoplay: {
         delay: 10000, 
         disableOnInteraction: false,
       },
     });
+    //
     var wrapper = $('.wrapper-header-home');
     var tempImage = new Image();
     var imageUrls = [
@@ -129,14 +133,13 @@ $(document).ready(function(){
         currentImageIndex = 0;
       }
     }
-    
     function startSlideShow() {
-      changeBackgroundImage();
-      setInterval(changeBackgroundImage, 10000);
-    }
-    
-    startSlideShow();
-    // 
+        changeBackgroundImage();
+        setInterval(changeBackgroundImage, 10000);
+      }
+      
+      startSlideShow();
+   //
     var swiper = new Swiper("#features_h .mySwiper", {
       slidesPerView: "auto",
       spaceBetween: 40,
@@ -145,5 +148,5 @@ $(document).ready(function(){
         el: ".swiper-pagination",
         clickable: true,
       },
-    });
+    });;
 });

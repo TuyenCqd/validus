@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../class.scss';
 .wrapper-header{
     &-blog {
         background-image: url(../images/header/blog/headerBg.png);
@@ -15,6 +15,9 @@
 }
     .header-top{
         border-bottom: 1px solid #4f4e4e;
+        &-left{
+            gap: 80px;
+        }
         .wrapper-logo{
             padding: 2px 0 0 0;
         }
@@ -162,7 +165,7 @@
             }
         }
         .wrapper-contact{
-            // gap: 30px;
+            gap: 30px;
             padding: 1px 0 0 0;
             .wrapper-phone{
                 gap: 10px;
@@ -179,16 +182,12 @@
                 }
             }
             button.btn-get{
-                padding: 19px 30px 17px 30px;
-                border: none;
-                border-radius: 2px;
-                background-color: #fff;
-                color: #222222;
-                transition: all 0.3s;
                 &:hover{
                     cursor: pointer;
                     background-color: $color-orange;
-                    color: #fff;
+                    p{
+                        color: $color-white;
+                    }
                 }
             }
         }
@@ -230,10 +229,6 @@
                         }
                     }
                 }
-                button.btn-get{
-                    background-color: $color-back-main;
-                    color: $color-white;
-                }
             }
         }
     }
@@ -257,30 +252,29 @@
             }
         }
     }
-    .breadcrumb-item+.breadcrumb-item::before {
+    li.icon-chevron-right:before {
         float: left;
         padding-right: 11px;
         color: $color-back-main;
-        content: ">" !important;
     }
 //responsive
 
 @media only screen and (min-width: 1280px){
-    .wrapper-logo{
-        flex: 1.946;
-    }
-    .wrapper-menu{
-        flex: 7.419;
-    }
-    .wrapper-contact{
-        flex: 2.635;
-    }
+    // .wrapper-logo{
+    //     flex: 1.946;
+    // }
+    // .wrapper-menu{
+    //     flex: 7.419;
+    // }
+    // .wrapper-contact{
+    //     flex: 2.635;
+    // }
     .nav_menu_res, .cart_res{
         display: none;
     }
 }
 @media only screen and (max-width: 1280px){
-    .wrapper-logo, .wrapper-menu, .wrapper-contact{
+    .header-top-left, .wrapper-contact{
         display: none !important;
     }
     .nav_menu_res, .cart_res{

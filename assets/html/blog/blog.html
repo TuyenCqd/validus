@@ -83,65 +83,70 @@
     </div>
     <div id="search"></div>
         <div id="search-child">
+            <button class="nav_quit">
+                <span class="icon-cross"></span>
+            </button>
             <input name="search" type="text" placeholder="search ...">
         </div>
     <header id="main-header">
         <div class="wrapper-header-blog ">
             <div class="header-top d-flex-al-center-jus-between container-fluid">
-                <div class="wrapper-logo">
-                    <img src="../../images/logo/logo-Full.png" alt="logo-image">
-                </div>
-                <div class="wrapper-menu d-flex-al-center">
-                    <ul class="menu-list d-flex-al-center-jus-start">
-                        <li class="menu-item home">
-                            <a href="../../../index.html">Home</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                            <div class="home-child ">
-                                <ul class="home-list ">
-                                    <li class="home-item"><a href="../../../index.html">Home</a></li>
-                                    <li class="home-item blog d-flex-al-center-jus-between">
-                                        <a href="blog.html" target="_blank">Blog</a>
-                                        <span class="icon-chevron-right rotate-90"></span>
-                                        <div class="blog-child ">
-                                            <ul class="blog-list ">
-                                                <li class="blog-item"><a href="posts/post-1.html" target="_blank">Post 1</a></li>
-                                                <li class="blog-item"><a href="#">Post 2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Company</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Services & Industries</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">News & Media</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Shop</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item search-cart d-flex">
-                            <div class="se-car-item" id="nav_search">
-                                <span class="icon-search"></span>
-                            </div>
-                            <div class="se-car-item  cart-click" id="nav_cart">
-                                <span class="icon-cart"></span>
-                                <div class="cart-click-notice" >
-                                    <p  class="Roboto-Regular-12">0</p>
+                <div class="header-top-left d-flex-al-center-jus-start">
+                    <div class="wrapper-logo">
+                        <img src="../../images/logo/logo-Full.png" alt="logo-image">
+                    </div>
+                    <div class="wrapper-menu d-flex-al-center">
+                        <ul class="menu-list d-flex-al-center-jus-start">
+                            <li class="menu-item home">
+                                <a href="../../../index.html">Home</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                                <div class="home-child ">
+                                    <ul class="home-list ">
+                                        <li class="home-item"><a href="../../../index.html">Home</a></li>
+                                        <li class="home-item blog d-flex-al-center-jus-between">
+                                            <a href="blog.html" target="_blank">Blog</a>
+                                            <span class="icon-chevron-right rotate-90"></span>
+                                            <div class="blog-child ">
+                                                <ul class="blog-list ">
+                                                    <li class="blog-item"><a href="posts/post-1.html" target="_blank">Post 1</a></li>
+                                                    <li class="blog-item"><a href="#">Post 2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Company</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Services & Industries</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">News & Media</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Shop</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item search-cart d-flex">
+                                <div class="se-car-item" id="nav_search">
+                                    <span class="icon-search"></span>
+                                </div>
+                                <div class="se-car-item  cart-click" id="nav_cart">
+                                    <span class="icon-cart"></span>
+                                    <div class="cart-click-notice" >
+                                        <p  class="Roboto-Regular-12">0</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="wrapper-contact d-flex-al-center-jus-between">
                     <div class="wrapper-phone d-flex-al-center">
@@ -150,7 +155,7 @@
                             <a href="#">+201061245741</a>
                         </div>
                     </div>
-                    <button class="btn-get">Get A Quote</button>
+                    <button class="btn-get btn-sm"><p class="btn-text">Get A Quote</p></button>
                 </div>
                 <div class="nav_menu_res ">
                     <button id="nav-res" class="nav_res d-flex-al-center-jus-start">
@@ -171,18 +176,18 @@
         </div>
     </header>
     <main id="main-blog">
-        <div class=" wrap-blog-list">
-            <div class="blog-list d-flex-jus-center-wrap">
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>22</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Jan 2023</p>
-                        </div>
-                    </div>
+        <div class=" wrap-blog-list container">
+            <div class="blog-list row">
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-1.png" alt="">
                     </div>
                     <div class="content">
@@ -207,16 +212,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>25</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Jan 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-2.png" alt="">
                     </div>
                     <div class="content">
@@ -242,16 +247,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>30</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Jan 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-3.png" alt="">
                     </div>
                     <div class="content">
@@ -276,16 +281,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>03</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-4.png" alt="">
                     </div>
                     <div class="content">
@@ -310,16 +315,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>07</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-5.png" alt="">
                     </div>
                     <div class="content">
@@ -344,16 +349,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>11</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-6.png" alt="">
                     </div>
                     <div class="content">
@@ -378,16 +383,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>20</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-7.png" alt="">
                     </div>
                     <div class="content">
@@ -412,16 +417,16 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>22</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-8.png" alt="">
                     </div>
                     <div class="content">
@@ -446,16 +451,50 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>30</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Feb 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
+                        <img src="../../images/blog/img-1.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="tittle">
+                            <p>New Factory Receives KOBAH Award For True Construction Excellence At 2023 Symposium</p>
+                        </div>
+                        <div class="meta">
+                            <p>industry, Insights</p>
+                            <span class="icon-minus"></span>
+                            <p>Mike Dooley</p>
+                        </div>
+                        <div class="about">
+                            <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
+                        </div>
+                        <a href="posts/post-1.html" target="_blank">
+                            <button id="news" class="d-flex-al-center-jus-start">
+                                <p>Read More</p>
+                                <div class="greater">
+                                    <span class="icon-chevron-right"></span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-2.png" alt="">
                     </div>
                     <div class="content">
@@ -480,16 +519,50 @@
                         </a>
                     </div>
                 </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>5</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Mar 2023</p>
-                        </div>
-                    </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
+                        <img src="../../images/blog/img-4.png" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="tittle">
+                            <p>New Factory Receives KOBAH Award For True Construction Excellence At 2023 Symposium</p>
+                        </div>
+                        <div class="meta">
+                            <p>industry, Insights</p>
+                            <span class="icon-minus"></span>
+                            <p>Mike Dooley</p>
+                        </div>
+                        <div class="about">
+                            <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
+                        </div>
+                        <a href="posts/post-1.html" target="_blank">
+                            <button id="news" class="d-flex-al-center-jus-start">
+                                <p>Read More</p>
+                                <div class="greater">
+                                    <span class="icon-chevron-right"></span>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                    <div class="image">
+                        <div class="date">
+                            <div class="day">
+                                <p>22</p>
+                            </div>
+                            <div class="moth-year">
+                                <p>Jan 2023</p>
+                            </div>
+                        </div>
                         <img src="../../images/blog/img-5.png" alt="">
                     </div>
                     <div class="content">
@@ -504,76 +577,8 @@
                         <div class="about">
                             <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
                         </div>
-                        <a href="Blog/News.html">
-                            <button id="news">
-                                <p>Read More</p>
-                                <div class="greater">
-                                    <span class="icon-chevron-right"></span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>22</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Jan 2023</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../../images/blog/img-1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="tittle">
-                            <p>New Factory Receives KOBAH Award For True Construction Excellence At 2023 Symposium</p>
-                        </div>
-                        <div class="meta">
-                            <p>industry, Insights</p>
-                            <span class="icon-minus"></span>
-                            <p>Mike Dooley</p>
-                        </div>
-                        <div class="about">
-                            <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
-                        </div>
-                        <a href="Blog/News.html">
-                            <button id="news">
-                                <p>Read More</p>
-                                <div class="greater">
-                                    <span class="icon-chevron-right"></span>
-                                </div>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="blog-item">
-                    <div class="date">
-                        <div class="day">
-                            <p>22</p>
-                        </div>
-                        <div class="moth-year">
-                            <p>Jan 2023</p>
-                        </div>
-                    </div>
-                    <div class="image">
-                        <img src="../../images/blog/img-1.png" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="tittle">
-                            <p>New Factory Receives KOBAH Award For True Construction Excellence At 2023 Symposium</p>
-                        </div>
-                        <div class="meta">
-                            <p>industry, Insights</p>
-                            <span class="icon-minus"></span>
-                            <p>Mike Dooley</p>
-                        </div>
-                        <div class="about">
-                            <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
-                        </div>
-                        <a href="Blog/News.html">
-                            <button id="news">
+                        <a href="posts/post-1.html" target="_blank">
+                            <button id="news" class="d-flex-al-center-jus-start">
                                 <p>Read More</p>
                                 <div class="greater">
                                     <span class="icon-chevron-right"></span>
@@ -596,7 +601,7 @@
                     <span class="icon-arrow-Right"></span>
                 </button>
             </div>
-        </div>
+        </div> 
     </main>
     <footer id="main-footer">
         <div class="wrap-footer-top">
@@ -607,7 +612,7 @@
                             <img src="../../images/logo/logo-Full.png" alt="logo-image">
                         </div>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Company</p>
                         <ul class="list">
                             <li class="list_item">
@@ -627,7 +632,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Services</p>
                         <ul class="list">
                             <li class="list_item">
@@ -650,7 +655,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Industries</p>
                         <ul class="list">
                             <li class="list_item">
@@ -673,7 +678,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p>Quick Contact</p>
                         <p class="address .text-al-left">2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
                         <button class="d-flex-al-center-jus-start icon email">

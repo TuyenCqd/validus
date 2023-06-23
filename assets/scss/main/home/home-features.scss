@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 
 #features_h{
     padding: 118px 0 383px 0;
@@ -8,7 +8,7 @@
     @extend .bg-img;
     &::before{
         content: '';
-        background: linear-gradient(to bottom, #161616 70% , rgba(0, 0, 0, 0.7) );                   
+        background: linear-gradient(to bottom, #161616 70%, rgba(0, 0, 0, 0.7) );                   
         @extend .absolute-0;
         z-index: -1;
     }
@@ -96,13 +96,10 @@
                 &-btn{
                     padding: 38px 0 33px 0;
                     gap: 30px;
-                    .wrap_about-btn{
-                        padding: 22px 30px;
-                        background-color: $color-white;
-                        border: 2px solid transparent;
-                        transition: all 0.5s;
+                    button{
+                        margin-left: auto;
+                        margin-right: auto;
                         .wrap-chevron{
-                            background-color: $color-back-main;
                             span{
                                 &::before{
                                     color: $color-white;
@@ -110,13 +107,10 @@
                             }
                         }
                         &:nth-child(2){
-                            padding: 24px 30px 25px 30px;
-                            background-color: $color-back-main;
-                            border: 2px solid $color-white;
+                            @include b-shadow($color-white);
                         }
                         &:hover{
                             background-color: $color-orange;
-                            border: 2px solid $color-white;
                             .wrap-chevron{
                                 background-color: $color-white;
                                 span{
@@ -138,8 +132,17 @@
                 flex: 6.83333;
                 overflow: hidden;
                 .wrap-industry{
-                    width: 510px;
                     position: relative;
+                    overflow: hidden;
+                    height: 100%;
+                    &-img{
+                        height: 100%;
+                        img{
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
                     &-layer{
                        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(255, 165, 0, 0));
                         position: absolute;
@@ -190,7 +193,6 @@
                     }
                     &-about{
                         position: absolute;
-                        overflow: hidden;
                         left: 50px;
                         bottom: 50px;
                         right: 170px;
@@ -205,7 +207,7 @@
                             }
                         }
                         &-text{
-                            visibility: hidden;
+                            opacity: 0;
                             transform: translate(0 , 100%);
                             transition: all 0.5s;
                         }
@@ -217,7 +219,7 @@
                                 transform: translate(0 , 0);
                             }
                             &-text{
-                                visibility: visible;
+                                opacity: 1;
                                 transform: translate(0 , 0);
                             }
                         }
@@ -272,13 +274,13 @@
     .wrap-features_h{
         padding: 0 10px;
     }
-    .swiper {
-        width: 410px !important;
-        .swiper-slide{
-            width: 410px !important;
-            .wrap-industry {
-                width: 410px !important;
-            }
-        }
-    }
+    // .swiper {
+    //     width: 410px !important;
+    //     .swiper-slide{
+    //         width: 410px !important;
+    //         .wrap-industry {
+    //             width: 410px !important;
+    //         }
+    //     }
+    // }
 }

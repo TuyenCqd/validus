@@ -1,4 +1,4 @@
-@import 'class.scss';     
+@import '../../class.scss';
 
 .wrapper-main-post {
     gap: 70px;
@@ -29,28 +29,13 @@
                 padding: 32px 50px 38px 50px;
                 .blog-about{
                     .about-author {
-                        gap: 30px;
+                        gap: 10px;
                         margin: 0 0 15px 0;
-                        p{
-                            margin: 0;
-                            &.center{
-                                position: relative;
-                                &::before{
-                                    position: absolute;
-                                    content: '-';
-                                    color: $color-gray-footer-li;
-                                    top: -8px;
-                                    left: -20px;
-                                    font-size: 25px;
-                                }
-                                &::after{
-                                    position: absolute;
-                                    content: '-';
-                                    color: $color-gray-footer-li;
-                                    top: -8px;
-                                    right: -20px;
-                                    font-size: 25px;
-                                }
+                        &-item{
+                            &::before{
+                                font-size: 8px;
+                                float: left;
+                                padding-right: 10px;
                             }
                         }
                     }
@@ -280,7 +265,6 @@
             }
             .post-item{
                 gap: 20px;
-                height: 80px;
                 margin-bottom: 30px;
                 &:last-child{
                     margin-bottom: 0;
@@ -288,9 +272,11 @@
                 .post-image {
                     flex: 3.556;
                     overflow: hidden;
-                    height: 100%;
-                    > img{
+                    display: flex;
+                    >img{
                         height: 100%;
+                        width: 100%;
+                        object-fit: cover;
                     }
                 }
                 .post-about {
@@ -299,7 +285,7 @@
                         margin: 0;
                     }
                     .post-day > p{
-                        margin: 0 0 13px 0;
+                        margin: 0 0 7px 0;
                     }
                 }
             }
@@ -343,76 +329,79 @@
     }
 }
 
-         /* reply */
-         .reply{
-            .reply-tittle{
-                > p{
-                    margin: 0 0 42px 0;
-                }
-            }
-            .reply-inf{
-                gap: 42px;
-                .wrap-input{
-                    gap: 10px;
-                    input{
-                        border: 1px solid #c6c6c6;
-                        border-radius: 2px;
-                        &::placeholder{
-                            color: #5d5d5d;
-                        }
-                        &[type="text"] {
-                            padding: 16px 20px;
-                            width: 100%;
-                        }
-                    }
-                }
-            }
-            > input[type="text"] {
-                width: 100%;
-                margin: 40px 0 0 0;
-                padding: 16px 20px 123px 20px;
-            }
-            > button {
-                cursor: pointer;
-                padding: 16px 30px;
-                gap: 55px;
-                border: none;
+/* reply */
+.reply{
+    .reply-tittle{
+        > p{
+            margin: 0 0 42px 0;
+        }
+    }
+    .reply-inf{
+        gap: 42px;
+        .wrap-input{
+            gap: 10px;
+            input{
+                border: 1px solid #c6c6c6;
                 border-radius: 2px;
-                background-color: #222222;
-                margin: 40px 0 0 0;
-                > p{
-                    color: $color-white;
-                    margin: 0;
+                &::placeholder{
+                    color: #5d5d5d;
                 }
-                > .chevron {
-                    height: 32px;
-                    width: 32px;
-                    border-radius: 50%;
-                    background: $color-white;
-                    position: relative;
-                    transition: all 0.3s;
-                    > span::before{
-                        position: absolute;
-                        top: 50%;
-                        left: 50%;
-                        transform: translate(-50%,-50%);
-                        color: #000;
-                    }
+                &[type="text"] {
+                    padding: 16px 20px;
+                    width: 100%;
                 }
-                &:hover{
-                    background-color: $color-orange;
-                    > .chevron{
-                        background-color: $color-orange;
-                        transform: translate(50px, 0) scale(1.5);
-                        span{
-                            &::before{
-                                color: $color-white;
-                            }
-                        }
+            }
+        }
+    }
+    > input[type="text"] {
+        border: 1px solid #c6c6c6;
+        &::placeholder{
+            color: #5d5d5d;
+        }
+        width: 100%;
+        margin: 40px 0 0 0;
+        padding: 16px 20px 123px 20px;
+    }
+    > button {
+        cursor: pointer;
+        gap: 55px;
+        border: none;
+        border-radius: 2px;
+        background-color: #222222;
+        margin: 40px 0 0 0;
+        > p{
+            color: $color-white;
+            margin: 0;
+        }
+        > .chevron {
+            height: 32px;
+            width: 32px;
+            border-radius: 50%;
+            background: $color-white;
+            position: relative;
+            transition: all 0.3s;
+            > span::before{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                color: #000;
+            }
+        }
+        &:hover{
+            background-color: $color-orange;
+            > .chevron{
+                background-color: $color-orange;
+                transform: translate(50px, 0) scale(1.5);
+                span{
+                    &::before{
+                        color: $color-white;
                     }
                 }
             }
         }
+    }
+}
 .wrapper-btn-tag {
     gap: 10px;
     .tag-item {
@@ -434,7 +423,7 @@
 
     }
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1280px){
     div#content {
         flex: 7.875;
     }
@@ -442,14 +431,9 @@
         flex: 3.46875;
     }
 }
-@media only screen and (max-width: 1199px){
+@media only screen and (max-width: 1279px){
     .wrapper-main-post{
         display: unset !important;
-    }
-}
-@media (min-width: 992px ) and (max-width:1199px){
-    .reply-inf {
-        gap: 10px !important;
     }
 }
 @media only screen and (max-width: 991px){

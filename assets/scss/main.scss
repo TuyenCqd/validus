@@ -1,11 +1,11 @@
 @import 'class.scss';
 @import 'font-text.scss';
 @import 'swiper.scss';
-  @import 'header.scss';
-  @import 'home.scss';
-    @import 'blog.scss';
-      @import 'post.scss';
-  @import 'footer.scss';
+@import 'header/header.scss';
+@import 'main/home/home.scss';
+@import 'main/blog/blog.scss';
+@import 'main/post/post.scss';
+@import 'footer/footer.scss';
 *, ::after, ::before {
   box-sizing: border-box;
   margin: 0;

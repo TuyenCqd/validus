@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../class.scss';
 .wrap-footer-top{
     padding: 127px 0 91px 0;
     background-color: $color-back-footer;
@@ -70,7 +70,7 @@
     .footer-bottom{
         .bottom-item{
             ul.bottom-list{
-                gap: 32px;
+                gap: 14px;
                 li.bottom-list-item{
                     position: relative;
                     &:last-child{
@@ -108,12 +108,14 @@
     }
 }
 .bottom-list-item+.bottom-list-item::before {
-    float: left;
-    padding-right: 20px;
+    padding-right: 14px;
     color: $color-back-main;
     content: "-" !important;
 }
-@media only screen and (max-width: 1200px){
+@media only screen and (max-width: 1280px){
+    .wrap-footer-bottom .footer-bottom .bottom-item ul.bottom-list {
+        justify-content: center;
+    }
     .top-item{
         text-align: center;
         button{

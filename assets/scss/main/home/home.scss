@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 @import 'home-about.scss';
 @import 'home-social.scss';
 @import 'home-services.scss';
@@ -9,7 +9,6 @@
 @import 'home-blog.scss';
 
 #main-home{
-    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -21,57 +20,49 @@
         }
     }
     &-bottom{
+        &-left{
+            .wrap-button{
+                margin: 33px 0 0 0;
+                gap: 30px;
+                button.services{
+                    .wrap-chevron{
+                        span{
+                            &::before{
+                                color: $color-orange;
+                            }
+                        }
+                    }
+                    &:hover{
+                        background-color: $color-white;
+                        .wrap-chevron{
+                            background-color: $color-back-main;
+                            span{
+                                &::before{
+                                    color: $color-white;
+                                }
+                            }
+                        }
+                        .text{
+                            p{
+                                color: $color-back-main;
+                            }
+                        }
+                    }
+                }
+                button.learn{
+                    &:hover{
+                        background-color: $color-orange;
+                        p{
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+        }
         &-right{
             grid-column-start: 8 !important;
             grid-column-end: 13 !important;
             grid-column: span 5;
-        }
-    }
-}
-.wrap-button{
-    margin: 33px 0 0 0;
-    gap: 30px;
-    button{
-        transition: all 0.3s;
-        padding: 20px 30px 21px 30px;
-        &:hover{
-            background-color: $color-orange;
-            .text.item-btn{
-                p{
-                    color: $color-white;
-                }
-            }
-        }
-    }
-}
-button.services {
-    span{
-        &::before{
-            color: $color-white;
-        }
-    }
-    .item-btn{
-        &:nth-child(2){
-           background-color: $color-back-main;
-        }
-    }
-    &:hover{
-        .item-btn{
-            &:nth-child(1){
-                order: 2;
-                p{
-                    color: $color-white;
-                }
-            }
-            &:nth-child(2){
-                order: 1;
-                background-color: $color-white;
-                span{
-                    &::before{
-                        color: $color-orange;
-                    }
-                }
-            }
         }
     }
 }

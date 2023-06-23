@@ -1,16 +1,23 @@
-@import 'class.scss';
+@import '../../class.scss';
 
 #process_h{
     position: relative;
-    padding: 104px 160px 108px 110px;
+    padding: 52px 160px 108px 110px;
     margin: -318px 0 0 160px;
     background-color: $color-orange;
 }
 .wrap-process{
     gap: 150px;
+    // position: relative;
     &-left{
         margin-top: 6px;
         flex: 5.230769;
+        &-child{
+            padding-top: 52px;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+            
         .social-tittle{
             margin-bottom: 27px;
             p{
@@ -18,13 +25,8 @@
                 margin-bottom: 25px;
             }
         }
-        button.wrap_about-btn{
-            padding: 21px 30px 20px 30px;
-            margin-bottom: 154px;
-            background-color: $color-white;
-            transition: all 0.3s;
+        button{
             .wrap-chevron{
-                background-color: $color-back-main;
                 transition: all 0.3s;
                 span{
                     &::before{
@@ -49,13 +51,16 @@
                 }
             }
         }
+        }
         &-img{
+            margin-top: 150px;
             height: 326px;
             background-image: url(../images/main/process/worker.png);
             @extend .bg-img;
         }
     }
     &-right{
+        padding-top: 52px;
         flex: 5.230769;
         &-item{
             gap: 49px;
@@ -118,7 +123,7 @@
         &-left{
             margin-bottom: 60px;
             text-align: center;
-            button.wrap_about-btn{
+            button{
                 margin-left: auto;
                 margin-right: auto;
             }

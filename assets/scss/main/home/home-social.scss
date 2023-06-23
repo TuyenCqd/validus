@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 .swiper-button-item{
     width: 100px;
     height: 100px;
@@ -38,9 +38,6 @@
         .swiper-slide{
             &:nth-child(1){
                 .wrap-social{
-                    &-img{
-                        background-image: url(../images/main/social/img-1.png);
-                    }
                     &-about{ 
                         &::before{
                             content: url(../images/main/social/img-1_1.png);
@@ -51,9 +48,6 @@
             
             &:nth-child(2){
                 .wrap-social{
-                    &-img{
-                        background-image: url(../images/main/social/img-2.png);
-                    }
                     &-about{ 
                         &::before{
                             content: url(../images/main/social/img-2_1.png);
@@ -64,9 +58,6 @@
             
             &:nth-child(3){
                 .wrap-social{
-                    &-img{
-                        background-image: url(../images/main/social/img-3.png);
-                    }
                     &-about{ 
                         &::before{
                             content: url(../images/main/social/img-3_1.png);
@@ -152,7 +143,12 @@
     grid-gap: unset !important;
     .wrap-social{
         &-img{
-            @extend .bg-img;
+            overflow: hidden;
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
         }
         &-about{ 
             position: relative;
@@ -169,13 +165,8 @@
                 &-btn{
                     gap: 30px;
                     margin: 42px 0 0 0;
-                    button.wrap_about-btn{
-                        padding: 21px 30px 20px 30px;
-                        background-color: $color-white;
-                        transition: all 0.3s;
+                    button.wrap_about_btn{
                         .wrap-chevron{
-                            background-color: $color-back-main;
-                            transition: all 0.3s;
                             span{
                                 &::before{
                                     color: $color-white;
@@ -200,11 +191,10 @@
                         }
                     }
                     button.contact{
-                        padding: 25px 30px 24px 30px;
-                        height: 100%;
-                        background-color: $color-orange;
-                        border: 2px solid $color-white;
-                        border-radius: 3px;
+                        @include b-shadow($color-white);
+                        &:hover{
+                            background-color: $color-back-main;
+                        }
                     }
                 }
             }
@@ -247,9 +237,6 @@
     .wrap_social_h{
         display: unset !important;
         .wrap-social{
-            &-img{
-                height: 900px;
-            }
             &-about{ 
                 position: relative;
                 padding: 110px 30px;

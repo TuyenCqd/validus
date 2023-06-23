@@ -83,65 +83,70 @@
     </div>
     <div id="search"></div>
     <div id="search-child">
+        <button class="nav_quit">
+            <span class="icon-cross"></span>
+        </button>
         <input name="search" type="text" placeholder="search ...">
     </div>
     <header id="main-header">
         <div class="wrapper-header-post ">
             <div class="header-top header-top-post d-flex-al-center-jus-between container-fluid">
-                <div class="wrapper-logo">
-                    <img src="../../../images/logo/logo-Full-black.png" alt="logo-image">
-                </div>
-                <div class="wrapper-menu d-flex-al-center">
-                    <ul class="menu-list d-flex-al-center-jus-start">
-                        <li class="menu-item home">
-                            <a href="../../../../index.html">Home</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                            <div class="home-child ">
-                                <ul class="home-list ">
-                                    <li class="home-item"><a href="../../../../index.html">Home</a></li>
-                                    <li class="home-item blog d-flex-al-center-jus-between">
-                                        <a href="../blog.html">Blog</a>
-                                        <span class="icon-chevron-right rotate-90"></span>
-                                        <div class="blog-child ">
-                                            <ul class="blog-list ">
-                                                <li class="blog-item"><a href="post-1.html">Post 1</a></li>
-                                                <li class="blog-item"><a href="#">Post 2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Company</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Services & Industries</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">News & Media</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Shop</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item search-cart d-flex">
-                            <div class="se-car-item" id="nav_search">
-                                <span class="icon-search"></span>
-                            </div>
-                            <div class="se-car-item  cart-click" id="nav_cart">
-                                <span class="icon-cart"></span>
-                                <div class="cart-click-notice" >
-                                    <p  class="Roboto-Regular-12">0</p>
+                <div class="header-top-left d-flex-al-center-jus-start">
+                    <div class="wrapper-logo">
+                        <img src="../../../images/logo/logo-Full-black.png" alt="logo-image">
+                    </div>
+                    <div class="wrapper-menu d-flex-al-center">
+                        <ul class="menu-list d-flex-al-center-jus-start">
+                            <li class="menu-item home">
+                                <a href="../../../../index.html">Home</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                                <div class="home-child ">
+                                    <ul class="home-list ">
+                                        <li class="home-item"><a href="../../../../index.html">Home</a></li>
+                                        <li class="home-item blog d-flex-al-center-jus-between">
+                                            <a href="../blog.html">Blog</a>
+                                            <span class="icon-chevron-right rotate-90"></span>
+                                            <div class="blog-child ">
+                                                <ul class="blog-list ">
+                                                    <li class="blog-item"><a href="post-1.html">Post 1</a></li>
+                                                    <li class="blog-item"><a href="#">Post 2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Company</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Services & Industries</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">News & Media</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Shop</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item search-cart d-flex">
+                                <div class="se-car-item" id="nav_search">
+                                    <span class="icon-search"></span>
+                                </div>
+                                <div class="se-car-item  cart-click" id="nav_cart">
+                                    <span class="icon-cart"></span>
+                                    <div class="cart-click-notice" >
+                                        <p  class="Roboto-Regular-12">0</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="wrapper-contact d-flex-al-center-jus-between">
                     <div class="wrapper-phone d-flex-al-center">
@@ -150,7 +155,7 @@
                             <a href="#">+201061245741</a>
                         </div>
                     </div>
-                    <button class="btn-get">Get A Quote</button>
+                    <button class="btn-get btn btn-sm bg-col-black"><p class="btn-text white">Get A Quote</p></button>
                 </div>
                 <div class="nav_menu_res ">
                     <button id="nav-res" class="nav_res d-flex-al-center-jus-start">
@@ -169,13 +174,13 @@
                 <div class="breadcrumb container">
                     <div class=" wrapper-breadcrumb">
                         <ul class="breadcrumb-list d-flex-al-center-jus-start-wrap">
-                            <li class="breadcrumb-item">
+                            <li class="breadcrumb-item d-flex-al-center">
                                 <a href="../../../../index.html">Home</a>
                             </li>
-                            <li class="breadcrumb-item">
+                            <li class="breadcrumb-item d-flex-al-center icon-chevron-right">
                                 <a href="../blog.html">Blog</a>
                             </li>
-                            <li class="breadcrumb-item">
+                            <li class="breadcrumb-item d-flex-al-center icon-chevron-right">
                                 <span class="breadcrumb-entry">New Factory Receives The KOBAH Award For A True Construction Excellence</span>
                             </li>
                         </ul>
@@ -201,10 +206,10 @@
                     </div>
                     <div class="blog-item-content">
                         <div class="blog-about">
-                            <div class="about-author d-flex-al-center-jus-start">
-                                <p class="orange">industry, Insights</p>
-                                <p class="center black">Mike Dooley</p>
-                                <p class="gray">Comments: <span class="orange">2</span></p>
+                            <div class="about-author d-flex-al-center-jus-start-wrap">
+                                <p class="about-author-item Roboto-Regular-13 orange">industry, Insights</p>
+                                <p class="about-author-item Roboto-Regular-13 d-flex-al-center icon-minus black">Mike Dooley</p>
+                                <p class="about-author-item Roboto-Regular-13 d-flex-al-center icon-minus gray">Comments: <span class="orange">2</span></p>
                             </div>
                             <div class="about-content">
                                 <div class="about-content-tittle">
@@ -420,18 +425,18 @@
                     <div class="reply-tittle">
                         <p class="tittle">Leave A Reply</p>
                     </div>
-                    <div class="reply-inf d-flex-jus-between-wrap">
-                        <div class="wrap-input d-flex-al-center">
+                    <div class="reply-inf row">
+                        <div class="wrap-input col-lg-4 col-xl-4 d-flex-al-center">
                             <input type="text" id="name" name="name" placeholder="Name">
                                 <label class="Changa-Medium-16-20" for="name" id="empty-name">(*)</label>
                                 <label class="Changa-Medium-16-20" for="name" id="valid-name">(*)</label>
                             </div>
-                        <div class="wrap-input d-flex-al-center">
+                        <div class="wrap-input col-lg-4 col-xl-4 d-flex-al-center">
                             <input type="text" id="email" name="email" placeholder="Email">
                                 <label class="Changa-Medium-16-20" for="email" id="empty-email">(*)</label>
                                 <label class="Changa-Medium-16-20" for="email" id="valid-email">(*)</label>
                             </div>
-                        <div class="wrap-input d-flex-al-center">
+                        <div class="wrap-input col-lg-4 col-xl-4 d-flex-al-center">
                             <input type="text" id="website" name="website" placeholder="Website">
                                 <label class="Changa-Medium-16-20" for="website" id="empty-website">(*)</label>
                                 <label class="Changa-Medium-16-20" for="website" id="valid-website">(*)</label>
@@ -440,7 +445,7 @@
                     <input type="text" id="comment" name="comment" placeholder="Comment">
                         <label class="Changa-Medium-16-20" for="comment" id="empty-comment">(*)</label>
                         <label class="Changa-Medium-16-20" for="comment" id="valid-comment">(*)</label>
-                    <button class="btn-sub d-flex-al-center-jus-between" type="submit" id="btn_submit">
+                    <button class="btn-icon btn-lg bg-col-black btn-sub  d-flex-al-center-jus-between" type="submit" id="btn_submit">
                         <p>Submit Your Request</p>
                         <div class="chevron">
                             <span class="icon-chevron-right"></span>
@@ -467,7 +472,7 @@
                                 <p>Jan 25, 2023</p> 
                             </div>
                             <div class="post-text">
-                                <p class="Changa-Medium-16-20-mar20"> Certifying Our Leaders As Management Specialists True</p>
+                                <a href="#" class="Changa-Medium-16-20"> Certifying Our Leaders As Management Specialists True</a>
                             </div>
                         </div>
                     </div>
@@ -480,7 +485,7 @@
                                 <p> Jan 30, 2023</p>
                             </div>
                             <div class="post-text">
-                                <p class="Changa-Medium-16-20">Experts Share Eleven Must To Do Safety Practices On The</p> 
+                                <a href="#" class="Changa-Medium-16-20">Experts Share Eleven Must To Do Safety Practices On The</a> 
                             </div>
                         </div>
                     </div>
@@ -493,7 +498,7 @@
                                 <p> Feb 07, 2023</p>
                             </div>
                             <div class="post-text">
-                                <p class="Changa-Medium-16-20">To Harness World’s Energy Resources By Joining ADEE All</p> 
+                                <a href="#" class="Changa-Medium-16-20">To Harness World’s Energy Resources By Joining ADEE All</a> 
                             </div>
                         </div>
                     </div>

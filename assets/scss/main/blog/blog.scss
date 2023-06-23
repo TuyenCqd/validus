@@ -1,48 +1,51 @@
-@import 'class.scss';
+@import '../../class.scss';
 .active{
     background-color: $color-orange !important;
 }
+#main-blog{
+    padding: 110px 0 90px 0;
+}
 div.blog-item {
-    width: 400px;
-    height: 623px;
     box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
     position: relative;
     overflow: hidden;
     transition: all 0.5s;
      /**/
-    .date{
-        position: absolute;
-        top: 22px;
-        left: 35px;
-        z-index: 10;
-        p{
-            margin: 0;
-            color: #fff;
-        }
-    }
     .image{
         position: relative;
         z-index: 2;
+        overflow: hidden;
+        display: flex;
+        transition: all 0.5s;
         &::after{
             content: ' ';
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.4);
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
-            bottom: 4px;
+            bottom: 0;
             z-index: 0;
+        }
+        .date{
+            position: absolute;
+            top: 22px;
+            left: 35px;
+            z-index: 10;
+            p{
+                margin: 0;
+                color: #fff;
+            }
         }
         img{
             height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
     .content {
-        padding: 35px 40px 0 40px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: 100;
+        transition: all 0.5s;
+        padding: 35px 40px 30px 40px;
         .tittle {
             p{
                 margin: 0;
@@ -65,12 +68,13 @@ div.blog-item {
             }
         }
         .about{
+            margin: 0 0 25px 0;
             p{
                 margin: 0;
                 color: #9b9b9b;
             }
         }
-        a{
+        > a{
             button{
                 border: 0;
                 background-color: transparent;
@@ -78,7 +82,7 @@ div.blog-item {
                 gap: 10px;
                 justify-content: start;
                 align-items: center;
-                padding: 25px 0 30px 0;
+                padding: 0;
                 transition: all 0.3s;
                 p{
                     margin: 0;
@@ -107,16 +111,19 @@ div.blog-item {
         }
     }
     &:hover{
+        cursor: pointer;
         transform: translate(0, -20px);
-        > .image{
+        .image{
             height: 100%;
-            transition: all 1s;
-            > img {
-                transform: translateX(-15%);
-                transition: all 0.3s;
+            width: 100%;
+            img{
+                object-position: 27% 100%;
             }
         }
         .content {
+            position: relative;
+            transform: translateY(-100%);
+            z-index: 10;
             p{
                 color: #fff;
                 transition: all 0.3s;
@@ -142,10 +149,9 @@ div.blog-item {
     }
 }
 .wrap-blog-list{
-    padding: 110px 0 90px 0;
     height: 100%;
     .blog-list {
-        gap: 40px;
+         grid-gap: 40px;
     }
     .blog-list-number{
         margin-top: 40px;

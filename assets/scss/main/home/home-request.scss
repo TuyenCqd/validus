@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 
 #request_h{
     background-image: url(../images/main/request/bg.png);
@@ -14,11 +14,6 @@
     }
 }
 .wrap-request_h{
-    .wrap_about-btn{
-        &:active{
-            box-shadow: unset;
-        }
-    }
     .request{
         &-left{
             flex: 6.89199;
@@ -74,6 +69,19 @@
                 }
                 > button{
                     padding: 23px 30px;
+                    .icon-chevron-right{
+                        &::before{
+                            font-size: 18px;
+                            color: $color-back-main;
+                        }
+                    }
+                    &:hover{
+                        .icon-chevron-right{
+                            &::before{
+                                color: $color-white;
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -91,10 +99,6 @@
                     @extend .absolute-0;
                     z-index: -1;
                 }
-                button{
-                    padding: 7px 0 8px 0;
-                    background-color: transparent;
-                }
                 &-tittle{
                     p{
                         line-height: 33px;
@@ -108,7 +112,8 @@
                 }
                 &-download{
                     margin: 15px 0 0 0 ;
-                    .wrap_about-btn{
+                    button{
+                        padding-left: 0;
                         .wrap-chevron{
                             height: 32px;
                             width: 32px;
@@ -120,8 +125,8 @@
                         }
                         &:hover{
                             .wrap-chevron{
-                                border: 5px solid $color-white;
-                                background-color: $color-orange;
+                                border: 2px solid $color-white;
+                                background-color: $color-back-main;
                                 span{
                                     &::before{
                                         color: $color-white;
@@ -134,31 +139,13 @@
                 }
                 &-infor{
                     margin: 108px 0 0 0;
-                    .wrap_about-btn{
+                    &-item{
                         gap: 15px;
-                        .wrap-chevron{
-                            background-color: transparent;
-                            span{
-                                &::before{
-                                    color: $color-white;
-                                    font-size: 16px;
-                                }
-                            }
-                        }
-                        &:nth-child(2){
-                            .wrap-chevron{
-                                margin: 0 0 2px 0;
-                                span{
-                                    &::before{
-                                        font-size: 19px;
-                                    }
-                                }
-                            }
-                        }
-                        
-                        &:hover{
-                            .wrap-chevron{
-                                transform: scale(1.15);
+                        margin: 10px 0;
+                        cursor: pointer;
+                        a{
+                            &:hover{
+                                color: $color-white;
                             }
                         }
                     }
@@ -169,11 +156,10 @@
                     .request-contact{
                         width: 100%;
                         background-color: $color-white;
-                        padding: 21px 0 22px 0;
-                        border: 10px solid transparent;
+                        padding: 33px 0 34px 0;
                         &:hover{
-                            background-color: $color-orange;
-                            border-color: $color-white;
+                            @include b-shadow($color-white);
+                            background-color: $color-back-footer;
                             p{
                                 color: $color-white ;
                             }
@@ -192,6 +178,11 @@
             &-left{
                 text-align: center;
                 .reply{
+                    &-select{
+                        &-item{
+                            justify-content: space-between;
+                        }
+                    }
                     > button{
                         margin-left: auto;
                         margin-right: auto;
@@ -199,7 +190,22 @@
                 }
             }
             &-right{
-                text-align: center;
+                &-child{
+                    &-download{
+                        button{
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                    }
+                    &-infor{
+                        &-ul{
+                            display: flex;
+                            li{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -221,6 +227,20 @@
                                 &:focus{
                                     border: none;
                                 }
+                            }
+                        }
+                    }
+                }
+            }
+            &-right{
+                &-child{
+                    &-infor{
+                        &-ul{
+                            display: flex;
+                            justify-content: center;
+                            flex-wrap: wrap;
+                            li{
+                                text-align: center;
                             }
                         }
                     }

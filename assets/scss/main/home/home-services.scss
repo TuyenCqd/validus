@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 
 .wrap-services_h{
     padding: 130px 0 110px 0;
@@ -20,9 +20,6 @@
                     gap: 30px;
                     margin: 32px 0 70px 0;
                     &-how{
-                        padding: 21px 30px 20px  30px;
-                        background-color: $color-back-main;
-                        transition: all 0.3s;
                         &:first-child{
                             &:hover{
                                 background-color: $color-orange;
@@ -34,7 +31,6 @@
                             }
                         }
                         &:last-child{
-                            background-color: transparent;
                             padding: 0;
                             .item-btn{
                                 &:nth-child(1){
@@ -47,9 +43,6 @@
                                 .item-btn{
                                     &:nth-child(1){
                                         background-color: $color-orange;
-                                        transform: scale(1.15);
-                                        height: 32px;
-                                        width: 32px;
                                         span{
                                             &::before{
                                                 color: $color-white;
@@ -108,9 +101,7 @@
                 &-btn{
                     margin: 3px 0 10px 0;
                     padding: 20px 0;
-                    background-color: transparent;
                     .wrap-chevron{
-                        background-color: $color-orange;
                         span{
                             &::before{
                                 color: $color-white;
@@ -131,7 +122,7 @@
                         filter: grayscale(100%) brightness(300%);
                         transform: rotateY(360deg);
                     }
-                    p{
+                    p, h5{
                         color: $color-white;
                     }
                     .services-bottom-item-bg{
@@ -154,7 +145,6 @@
                 }
             }
             &-last{
-                background-color: $color-white;
                 padding: 40px;
                 gap: 20px;
                 .wrap-alert{
@@ -211,19 +201,37 @@
                 }
                 .wrap-last-btn{
                     height: 100%;
-                    button.last-btn{
-                        height: 100%;
-                        border: 2px solid $color-back-main;
-                        border-radius: 2px;
-                        background-color: transparent;
-                        padding: 0 30px;
-                        transition: all 0.3s;
+                    button{
+                        @include b-shadow($color-back-main);
                         &:hover{
+                            box-shadow: none;
                             background-color: $color-orange;
-                            border-color: $color-gray-footer-li;
                             p{
                                 color: $color-white;
                             }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 1532px){
+    .wrap-services_h{
+        text-align: center;
+        .services{
+            &-bottom{
+                &-last{
+                    .wrap-alert{
+                        &-text{
+                            width: 80%;
+                        }
+                    } 
+                    button{
+                        margin-left: auto;
+                        margin-right: auto;
+                        p{
+                            line-height: 25px;
                         }
                     }
                 }

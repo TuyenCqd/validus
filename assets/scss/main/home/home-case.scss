@@ -1,4 +1,4 @@
-@import 'class.scss';
+@import '../../class.scss';
 
 .wrap-case{
     &-top{
@@ -16,11 +16,10 @@
         }
     }
     &-center{
-        padding-bottom: 50px;
+        margin-bottom: 50px;
         background-color: white;
-        border-bottom: 1px solid $color-gray-border;
         .flickity-viewport {
-            height: 584px !important;
+            // height: 100% !important;
             .flickity-slider{
                 left: 5px;
             }
@@ -54,6 +53,7 @@
                     width: 400px;
                     background-color: $color-white;
                     position: relative;
+                    margin-bottom: 100px;
                     &-inf{
                         position: absolute;
                         top: 30px;
@@ -79,6 +79,10 @@
                         background-color: $color-white;
                         box-shadow: 1px 1px 20px 1px rgba(0, 0, 0, 0.2);
                         transition: all 0.5s;
+                        position: relative;
+                        height: calc(100% - 300px);
+                        bottom: 0;
+                        top: 0;
                         &-tittle{
                             margin-bottom: 18px;
                         }
@@ -244,8 +248,12 @@
                 }
             }
         }
+        ol.flickity-page-dots {
+            width: 250px;
+        }
     }
     &-bottom{
+        border-top: 1px solid $color-gray-border;
         .case-bottom{
             padding: 62px 0;
             &-text{
@@ -303,6 +311,8 @@
                 }
             }
             .flickity-page-dots {
+                left: 50%;
+                transform: translate(-50%);
                 padding-left: 0;
                 text-align: center;
                 bottom: 0px;

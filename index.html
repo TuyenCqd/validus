@@ -86,66 +86,71 @@
         </div>
     </div>
     <div id="search"></div>
-        <div id="search-child">
-            <input name="search" type="text" placeholder="search ...">
-        </div>
+    <div id="search-child">
+        <button class="nav_quit">
+            <span class="icon-cross"></span>
+        </button>
+        <input name="search" type="text" placeholder="search ...">
+    </div>
     <header id="main-header">
         <div class="wrapper-header-home ">
             <div class="header-top d-flex-al-center-jus-between container-fluid">
-                <div class="wrapper-logo">
-                    <img src="assets/images/logo/logo-Full.png" alt="logo-image">
-                </div>
-                <div class="wrapper-menu d-flex-al-center">
-                    <ul class="menu-list d-flex-al-center-jus-start">
-                        <li class="menu-item home">
-                            <a href="#">Home</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                            <div class="home-child ">
-                                <ul class="home-list ">
-                                    <li class="home-item"><a href="#">Home</a></li>
-                                    <li class="home-item blog d-flex-al-center-jus-between">
-                                        <a href="assets/html/blog/blog.html" target="_blank">Blog</a>
-                                        <span class="icon-chevron-right rotate-90"></span>
-                                        <div class="blog-child ">
-                                            <ul class="blog-list ">
-                                                <li class="blog-item"><a href="assets/html/blog/posts/post-1.html" target="_blank">Post 1</a></li>
-                                                <li class="blog-item"><a href="#">Post 2</a></li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                    <li class="home-item"><a href="#"></a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#blog">Company</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Services & Industries</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">News & Media</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#">Shop</a>
-                            <span class="icon-chevron-right rotate-90"></span>
-                        </li>
-                        <li class="menu-item search-cart d-flex">
-                            <div class="se-car-item" id="nav_search">
-                                <span class="icon-search"></span>
-                            </div>
-                            <div class="se-car-item  cart-click" id="nav_cart">
-                                <span class="icon-cart"></span>
-                                <div class="cart-click-notice" >
-                                    <p  class="Roboto-Regular-12">0</p>
+                <div class="header-top-left d-flex-al-center-jus-start">
+                    <div class="wrapper-logo">
+                        <img src="assets/images/logo/logo-Full.png" alt="logo-image">
+                    </div>
+                    <div class="wrapper-menu d-flex-al-center">
+                        <ul class="menu-list d-flex-al-center-jus-start">
+                            <li class="menu-item home">
+                                <a href="#">Home</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                                <div class="home-child ">
+                                    <ul class="home-list ">
+                                        <li class="home-item"><a href="#">Home</a></li>
+                                        <li class="home-item blog d-flex-al-center-jus-between">
+                                            <a href="assets/html/blog/blog.html" target="_blank">Blog</a>
+                                            <span class="icon-chevron-right rotate-90"></span>
+                                            <div class="blog-child ">
+                                                <ul class="blog-list ">
+                                                    <li class="blog-item"><a href="assets/html/blog/posts/post-1.html" target="_blank">Post 1</a></li>
+                                                    <li class="blog-item"><a href="#">Post 2</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                        <li class="home-item"><a href="#"></a></li>
+                                    </ul>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#blog">Company</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Services & Industries</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">News & Media</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Shop</a>
+                                <span class="icon-chevron-right rotate-90"></span>
+                            </li>
+                            <li class="menu-item search-cart d-flex">
+                                <div class="se-car-item" id="nav_search">
+                                    <span class="icon-search"></span>
+                                </div>
+                                <div class="se-car-item  cart-click" id="nav_cart">
+                                    <span class="icon-cart"></span>
+                                    <div class="cart-click-notice" >
+                                        <p  class="Roboto-Regular-12">0</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="wrapper-contact d-flex-al-center-jus-between">
                     <div class="wrapper-phone d-flex-al-center">
@@ -154,7 +159,7 @@
                             <a href="#">+201061245741</a>
                         </div>
                     </div>
-                    <button class="btn-get">Get A Quote</button>
+                    <button class="btn-get btn btn-sm"><p class="btn-text">Get A Quote</p></button>
                 </div>
                 <div class="nav_menu_res ">
                     <button id="nav-res" class="nav_res d-flex-al-center-jus-start">
@@ -172,94 +177,94 @@
             <div class="header-bottom-home">
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide container">
-                            <div class="slide-header-top ">
-                                <div class="header-tittle">
-                                    <h1>Global Industry Quality Projects Expert Workers</h1>
-                                </div>
-                            </div>
-                            <div class="slide-bottom row">
-                                <div class="slide-header-bottom-left col-xl-5">
-                                    <div class="text">
-                                        <p class="Roboto-Bold-17">Our worldwide presence ensures timeliness, cost efficiency and compliance adherence required to ensure your serving you with great expertise as one of the World's leading Corporation!</p>
-                                    </div>
-                                    <div class="wrap-button d-flex-al-center">
-                                        <button class="services">
-                                            <div class="text item-btn">
-                                                <p class="Roboto-Bold-17 black">Our Services</p>
-                                            </div>
-                                            <div class="wrap-chevron item-btn">
-                                                <span class="icon-chevron-right"></span>
-                                            </div>
-                                        </button>
-                                        <button class="learn">
-                                            <div class="text item-btn">
-                                                <p class="Roboto-Bold-17 black">Learn More!</p>
-                                            </div>
-                                        </button>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrap container">
+                                <div class="slide-header-top ">
+                                    <div class="header-tittle">
+                                        <h1>Global Industry Quality Projects Expert Workers</h1>
                                     </div>
                                 </div>
-                                <div class="slide-header-bottom-right col-xl-5">
-                                    <div class="wrap-image d-flex">
-                                        <div class="image-item">
-                                            <div class="layer-img"></div>
-                                            <p class="changa-me-20">Personalised Solutions</p>
-                                            <div class="wrap-chevron">
-                                                <span class="icon-chevron-right"></span>
-                                            </div>
+                                <div class="slide-bottom row">
+                                    <div class="slide-header-bottom-left col-xl-5">
+                                        <div class="text">
+                                            <p class="Roboto-Bold-17">Our worldwide presence ensures timeliness, cost efficiency and compliance adherence required to ensure your serving you with great expertise as one of the World's leading Corporation!</p>
                                         </div>
-                                        <div class="image-item">
-                                            <div class="layer-img"></div>
-                                            <p class="changa-me-20">Environmental Sensitivity</p>
-                                            <div class="wrap-chevron">
-                                                <span class="icon-chevron-right"></span>
+                                        <div class="wrap-button d-flex-al-center">
+                                            <button class="services btn-icon btn-lg bg-col-orange">
+                                                <div class="wrap-chevron item-btn bg-col-white">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
+                                                <div class="text item-btn">
+                                                    <p class="btn-text white">Our Services</p>
+                                                </div>
+                                            </button>
+                                            <button class="learn btn btn-xl">
+                                                <p class="btn-text">Learn More!</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="slide-header-bottom-right col-xl-5">
+                                        <div class="wrap-image d-flex">
+                                            <div class="image-item">
+                                                <div class="layer-img"></div>
+                                                <p class="changa-me-20">Personalised Solutions</p>
+                                                <div class="wrap-chevron">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
+                                            </div>
+                                            <div class="image-item">
+                                                <div class="layer-img"></div>
+                                                <p class="changa-me-20">Environmental Sensitivity</p>
+                                                <div class="wrap-chevron">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide container">
-                            <div class="slide-header-top  ">
-                                <div class="header-tittle">
-                                    <h1>GProviding World Class Solutions & Technologies</h1>
-                                </div>
-                            </div>
-                            <div class="slide-bottom  row">
-                                <div class="slide-header-bottom-left col-xl-5">
-                                    <div class="text">
-                                        <p class="Roboto-Bold-17">Our worldwide presence ensures timeliness, cost efficiency and compliance adherence required to ensure your serving you with great expertise as one of the World's leading Corporation!</p>
-                                    </div>
-                                    <div class="wrap-button d-flex-al-center">
-                                        <button class="services">
-                                            <div class="text item-btn">
-                                                <p class="Roboto-Bold-17 black">Our Services</p>
-                                            </div>
-                                            <div class="wrap-chevron item-btn">
-                                                <span class="icon-chevron-right"></span>
-                                            </div>
-                                        </button>
-                                        <button class="learn">
-                                            <div class="text item-btn">
-                                                <p class="Roboto-Bold-17 black">Learn More!</p>
-                                            </div>
-                                        </button>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide-wrap container">
+                                <div class="slide-header-top  ">
+                                    <div class="header-tittle">
+                                        <h1>GProviding World Class Solutions & Technologies</h1>
                                     </div>
                                 </div>
-                                <div class="slide-header-bottom-right col-xl-5">
-                                    <div class="wrap-image d-flex-jus-between">
-                                        <div class="image-item">
-                                            <div class="layer-img"></div>
-                                            <p class="changa-me-20">Personalised Solutions</p>
-                                            <div class="wrap-chevron">
-                                                <span class="icon-chevron-right"></span>
-                                            </div>
+                                <div class="slide-bottom  row">
+                                    <div class="slide-header-bottom-left col-xl-5">
+                                        <div class="text">
+                                            <p class="Roboto-Bold-17">Our worldwide presence ensures timeliness, cost efficiency and compliance adherence required to ensure your serving you with great expertise as one of the World's leading Corporation!</p>
                                         </div>
-                                        <div class="image-item">
-                                            <div class="layer-img"></div>
-                                            <p class="changa-me-20">Environmental Sensitivity</p>
-                                            <div class="wrap-chevron">
-                                                <span class="icon-chevron-right"></span>
+                                        <div class="wrap-button d-flex-al-center">
+                                            <button class="services btn-icon btn-lg bg-col-orange">
+                                                <div class="wrap-chevron item-btn bg-col-white">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
+                                                <div class="text item-btn">
+                                                    <p class="btn-text white">Our Services</p>
+                                                </div>
+                                            </button>
+                                            <button class="learn btn btn-xl">
+                                                <p class="btn-text">Learn More!</p>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="slide-header-bottom-right col-xl-5">
+                                        <div class="wrap-image d-flex-jus-between">
+                                            <div class="image-item">
+                                                <div class="layer-img"></div>
+                                                <p class="changa-me-20">Personalised Solutions</p>
+                                                <div class="wrap-chevron">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
+                                            </div>
+                                            <div class="image-item">
+                                                <div class="layer-img"></div>
+                                                <p class="changa-me-20">Environmental Sensitivity</p>
+                                                <div class="wrap-chevron">
+                                                    <span class="icon-chevron-right"></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -288,59 +293,67 @@
                             <p class="Roboto-Bold-17 black">Yet those that embrace change are thriving, building bigger, better, faster, and stronger products than ever before. You are helping to lead the charge; we can help you build on your past successes and prepare for future.</p>
                             <p class="Roboto-Regular-17">Our Group is recognized as one of the World's leading Industry and Manufacturing Corporation serving an impressive list of long-term clients with experience and expertise in multiple industries.</p>
                         </div>
-                        <div class="wrap-text-select d-flex-jus-between">
-                            <div class="about-select-item col-6">
-                                <button class="select d-flex-al-center-jus-start">
-                                    <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
+                        <ul class="wrap-text-select d-flex-al-center-jus-start-wrap">
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
                                     <p class="Roboto-Bold-16">Satisfaction Guarantee</p>
-                                </button>
-                                <button class="select d-flex-al-center-jus-start">
-                                    <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
-                                    <p class="Roboto-Bold-16">Accurate Test Processes</p>
-                                </button>
-                                <button class="select d-flex-al-center-jus-start">
-                                    <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
-                                    <p class="Roboto-Bold-16">Unrivalled Workmanship</p>
-                                </button>
-                            </div>
-                            <div class="about-select-item col-6">
-                                <button class="select d-flex-al-center-jus-start">
-                                    <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
+                                </div>
+                                </li>
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
                                     <p class="Roboto-Bold-16">Professional & Qualified</p>
-                                </button>
-                                <button class="select d-flex-al-center-jus-start">
-                                    <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
+                                </div>
+                                </li>
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
+                                    <p class="Roboto-Bold-16">Accurate Test Processes</p>
+                                </div>
+                                </li>
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
                                     <p class="Roboto-Bold-16">Highly Professional Staff</p>
-                                </button>
-                                <button class="select d-flex-al-center-jus-start">
-                                        <div class="wrap-chevron">
-                                        <span class="icon-checkmark"></span>
-                                    </div>
+                                </div>
+                                </li>
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
+                                    <p class="Roboto-Bold-16">Unrivalled Workmanship</p>
+                                </div>
+                                </li>
+                            <li class="wrap-text-select-item d-flex-al-center-jus-start">
+                                <div class="wrap-chevron">
+                                    <span class="icon-checkmark"></span>
+                                </div>
+                                <div class="wrap-text-select-item-text">
                                     <p class="Roboto-Bold-16">Quality Control System</p>
-                                </button>
-                            </div>
-                        </div>
+                                </div>
+                                </li>
+                        </ul>
                     </div>
                     <div class="about_content_img d-flex-al-center-jus-between">
                         <div class="img-layer"></div>
                     </div>
                 </div>
-                <button class="wrap_about-btn">
-                    <div class="wrap-chevron item-btn">
+                <button class="wrap_about_btn btn-icon btn-lg bg-col-black">
+                    <div class="wrap-chevron item-btn  bg-col-white">
                         <span class="icon-chevron-right"></span>
                     </div>
-                    <div class="text item-btn">
-                        <p class="Roboto-Bold-17 white">Schedule An Appointment</p>
+                    <div class=" text item-btn">
+                        <p class="btn-text white">Schedule An Appointment</p>
                     </div>
                 </button>
             </div>
@@ -350,7 +363,9 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <div class="wrap_social_h row">
-                            <div class="wrap-social-img col-xl-6"></div>
+                            <div class="wrap-social-img col-xl-6">
+                                <img src="assets/images/main/social/img-1.png" alt="">
+                            </div>
                             <div class="wrap-social-about col-xl-6">
                                 <div class="social-tittle">
                                     <p class="Roboto-Bold-16 white">Social Responsibility And Ethics!</p>
@@ -363,16 +378,16 @@
                                     </p>
                                 </div>
                                 <div class="social-btn d-flex-al-center">
-                                    <button class="wrap_about-btn">
-                                        <div class="wrap-chevron item-btn">
+                                    <button class="wrap_about_btn btn-icon btn-lg bg-col-white">
+                                        <div class="wrap-chevron item-btn bg-col-black">
                                             <span class="icon-chevron-right"></span>
                                         </div>
-                                        <div class="text item-btn">
-                                            <p class="Roboto-Bold-17 black">Sustainability Reports</p>
+                                        <div class=" text item-btn">
+                                            <p class="btn-text black">Sustainability Reports</p>
                                         </div>
                                     </button>
-                                    <button class="contact wrap_about-btn d-flex-al-center-jus-center">
-                                        <p class="Roboto-Bold-15">Contact Us</p>
+                                    <button class="contact btn btn-xl bg-col-orange">
+                                        <p class="btn-text white">Contact Us</p>
                                     </button>
                                 </div>
                             </div>
@@ -380,7 +395,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrap_social_h row">
-                            <div class="wrap-social-img col-xl-6"></div>
+                            <div class="wrap-social-img col-xl-6">
+                                <img src="assets/images/main/social/img-2.png" alt="">
+                            </div>
                             <div class="wrap-social-about col-xl-6">
                                 <div class="social-tittle">
                                     <p class="Roboto-Bold-16 white">Social Responsibility And Ethics!</p>
@@ -393,16 +410,16 @@
                                     </p>
                                 </div>
                                 <div class="social-btn d-flex-al-center">
-                                    <button class="wrap_about-btn">
-                                        <div class="wrap-chevron item-btn">
+                                    <button class="wrap_about_btn btn-icon btn-lg bg-col-white">
+                                        <div class="wrap-chevron item-btn bg-col-black">
                                             <span class="icon-chevron-right"></span>
                                         </div>
-                                        <div class="text item-btn">
-                                            <p class="Roboto-Bold-17 black">Sustainability Reports</p>
+                                        <div class=" text item-btn">
+                                            <p class="btn-text black">Sustainability Reports</p>
                                         </div>
                                     </button>
-                                    <button class="contact wrap_about-btn d-flex-al-center-jus-center">
-                                        <p class="Roboto-Bold-15">Contact Us</p>
+                                    <button class="contact btn btn-xl bg-col-orange">
+                                        <p class="btn-text white">Contact Us</p>
                                     </button>
                                 </div>
                             </div>
@@ -410,7 +427,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="wrap_social_h row">
-                            <div class="wrap-social-img col-xl-6"></div>
+                            <div class="wrap-social-img col-xl-6">
+                                <img src="assets/images/main/social/img-3.png" alt="">
+                            </div>
                             <div class="wrap-social-about col-xl-6">
                                 <div class="social-tittle">
                                     <p class="Roboto-Bold-16 white">Social Responsibility And Ethics!</p>
@@ -423,16 +442,16 @@
                                     </p>
                                 </div>
                                 <div class="social-btn d-flex-al-center">
-                                    <button class="wrap_about-btn">
-                                        <div class="wrap-chevron item-btn">
+                                    <button class="wrap_about_btn btn-icon btn-lg bg-col-white">
+                                        <div class="wrap-chevron item-btn bg-col-black">
                                             <span class="icon-chevron-right"></span>
                                         </div>
-                                        <div class="text item-btn">
-                                            <p class="Roboto-Bold-17 black">Sustainability Reports</p>
+                                        <div class=" text item-btn">
+                                            <p class="btn-text black">Sustainability Reports</p>
                                         </div>
                                     </button>
-                                    <button class="contact wrap_about-btn d-flex-al-center-jus-center">
-                                        <p class="Roboto-Bold-15">Contact Us</p>
+                                    <button class="contact btn btn-xl bg-col-orange">
+                                        <p class="btn-text white">Contact Us</p>
                                     </button>
                                 </div>
                             </div>
@@ -465,20 +484,20 @@
                             <p class="Roboto-Regular-16">Validus has been built on engineering excellence crafted through unstinted dedication to quality, innovation and a constant objective to serve the global market and decade young industry expertise through serving an impressive list of long-term clients with experience and expertise in multiple industries.</p>
                         </div>
                         <div class="services-top-about-btn d-flex-al-center-jus-start">
-                            <button class="wrap_about-btn  services-top-about-btn-how">
-                                <div class="wrap-chevron item-btn">
+                            <button class="services-top-about-btn-how btn-icon btn-lg bg-col-black">
+                                <div class="wrap-chevron item-btn bg-col-white">
                                     <span class="icon-chevron-right"></span>
                                 </div>
                                 <div class="text item-btn">
-                                    <p class="Roboto-Bold-17 white">How Does It Work? </p>
+                                    <p class="btn-text white">How Does It Work? </p>
                                 </div>
                             </button>
-                            <button class="wrap_about-btn  services-top-about-btn-how">
+                            <button class="services-top-about-btn-how  btn-icon btn-lg bg-col-trans">
                                 <div class="wrap-chevron item-btn">
                                     <span class="icon-chevron-right"></span>
                                 </div>
                                 <div class="text item-btn">
-                                    <p class="Roboto-Bold-17 black">How Does It Work? </p>
+                                    <p class="btn-text black">Check All Services </p>
                                 </div>
                             </button>
                         </div>
@@ -488,13 +507,13 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 services-bottom-item">
                         <img src="assets/images/main/services/tank.png" alt="">
                         <div class="services-bottom-item-tittle">
-                            <p class="Changa-Medium-24">Oil & Gas Energy</p>
+                            <h5>Oil & Gas Energy</h5>
                         </div>
                         <div class="services-bottom-item-text">
                             <p class="Roboto-Regular-15">Petroleum and natural gas are nonrenewable sources of energy, a liquid found underground that can be used to make gasoline.</p>
                         </div>
-                        <button class="wrap_about-btn services-bottom-item-btn">
-                            <div class="wrap-chevron item-btn">
+                        <button class="services-bottom-item-btn btn-icon bg-col-trans">
+                            <div class="wrap-chevron item-btn bg-col-orange">
                                 <span class="icon-chevron-right"></span>
                             </div>
                             <div class="text item-btn">
@@ -505,13 +524,13 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 services-bottom-item">
                         <img src="assets/images/main/services/factory.png" alt="">
                         <div class="services-bottom-item-tittle">
-                            <p class="Changa-Medium-24">Industrial Construction</p>
+                            <h5>Industrial Construction</h5>
                         </div>
                         <div class="services-bottom-item-text">
                             <p class="Roboto-Regular-15">Professional discipline deals with designing, planning, construction and infrastructures management such as roads, tunnels, bridges.</p>
                         </div>
-                        <button class="wrap_about-btn services-bottom-item-btn">
-                            <div class="wrap-chevron item-btn">
+                        <button class="services-bottom-item-btn btn-icon bg-col-trans">
+                            <div class="wrap-chevron item-btn bg-col-orange">
                                 <span class="icon-chevron-right"></span>
                             </div>
                             <div class="text item-btn">
@@ -522,13 +541,13 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 services-bottom-item">
                         <img src="assets/images/main/services/gears.png" alt="">
                         <div class="services-bottom-item-tittle">
-                            <p class="Changa-Medium-24">Mechanical Engineering</p>
+                            <h5>Mechanical Engineering</h5>
                         </div>
                         <div class="services-bottom-item-text">
                             <p class="Roboto-Regular-15">Materials science principles to design, analyze, manufacture, and maintain mechanical systems. It is one of the oldest disciplines.</p>
                         </div>
-                        <button class="wrap_about-btn services-bottom-item-btn">
-                            <div class="wrap-chevron item-btn">
+                        <button class="services-bottom-item-btn btn-icon bg-col-trans">
+                            <div class="wrap-chevron item-btn bg-col-orange">
                                 <span class="icon-chevron-right"></span>
                             </div>
                             <div class="text item-btn">
@@ -539,13 +558,13 @@
                     <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12 services-bottom-item">
                         <img src="assets/images/main/services/robot.png" alt="">
                         <div class="services-bottom-item-tittle">
-                            <p class="Changa-Medium-24">Automotive Manufacturing</p>
+                            <h5>Automotive Manufacturing</h5>
                         </div>
                         <div class="services-bottom-item-text">
                             <p class="Roboto-Regular-15">The automotive industry comprises a wide range of companies involved in the design, auto development, manufacturing, and selling.</p>
                         </div>
-                        <button class="wrap_about-btn services-bottom-item-btn">
-                            <div class="wrap-chevron item-btn">
+                        <button class="services-bottom-item-btn btn-icon bg-col-trans">
+                            <div class="wrap-chevron item-btn bg-col-orange">
                                 <span class="icon-chevron-right"></span>
                             </div>
                             <div class="text item-btn">
@@ -553,7 +572,7 @@
                             </div>
                         </button>
                     </div>
-                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 services-bottom-last d-flex-al-center-jus-between">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 services-bottom-last d-flex-al-center-jus-between bg-col-white">
                         <div class="wrap-alert d-flex-al-center-jus-start">
                             <div class="wrap-alert-text">
                                 <p class="Roboto-Bold-15 gray">We have established a corporate mandate to maintain strong core values that truly reflect the philosophy. <span class="black">Schedule A Visit</span> </p>
@@ -563,8 +582,8 @@
                             </div>
                         </div>
                         <div class="wrap-last-btn">
-                            <button class="last-btn d-flex-al-center-jus-between">
-                                <p class="Roboto-Bold-15 black">Get A Free Quote</p>
+                            <button class="btn btn-xl bg-col-trans">
+                                <p class="btn-text black">Get A Free Quote</p>
                             </button>
                         </div>
                     </div>
@@ -609,16 +628,16 @@
                             </div>
                         </div>
                         <div class="features-bottom-left-item features-bottom-left-btn d-flex-al-center-jus-start">
-                            <button class="wrap_about-btn">
-                                <div class="wrap-chevron item-btn">
+                            <button class="btn-icon btn-lg">
+                                <div class="wrap-chevron item-btn bg-col-black">
                                     <span class="icon-chevron-right"></span>
                                 </div>
                                 <div class="text item-btn">
-                                    <p class="Roboto-Bold-15 black">Awards And Milestones</p>
+                                    <p class="btn-text black">Awards And Milestones</p>
                                 </div>
                             </button>
-                            <button class="contact wrap_about-btn d-flex-al-center-jus-center">
-                                <p class="Roboto-Bold-15">Contact Us</p>
+                            <button class="contact btn btn-xl bg-col-black">
+                                <p class="btn-text black white">Contact Us</p>
                             </button>
                         </div>
                     </div>
@@ -627,7 +646,9 @@
                             <div class="swiper-wrapper">
                               <div class="swiper-slide">
                                 <div class="wrap-industry">
-                                    <img src="assets/images/main/features/img-1.png" alt="">
+                                    <div class="wrap-industry-img">
+                                        <img src="assets/images/main/features/img-1.png" alt="">
+                                    </div>
                                     <div class="wrap-industry-layer"></div>
                                     <div class="wrap-industry-plus">
                                         <div class="wrap-industry-plus-icon">
@@ -636,7 +657,7 @@
                                     </div>
                                     <div class="wrap-industry-about">
                                         <div class="wrap-industry-about-tittle">
-                                            <p class="Changa-Medium-24 white">Retail & Consumer</p>
+                                            <h5 class="white">Retail & Consumer</p>
                                         </div>
                                         <div class="wrap-industry-about-text">
                                             <p class="Roboto-Regular-16 white-feature">we understand the complexity of the factors that come into play, site size to expensive machinery to shift changes that see hundreds of employees.</p>
@@ -646,7 +667,9 @@
                               </div>
                               <div class="swiper-slide">
                                 <div class="wrap-industry">
-                                    <img src="assets/images/main/features/img-2.png" alt="">
+                                    <div class="wrap-industry-img">
+                                        <img src="assets/images/main/features/img-2.png" alt="">
+                                    </div>
                                     <div class="wrap-industry-layer"></div>
                                     <div class="wrap-industry-plus">
                                         <div class="wrap-industry-plus-icon">
@@ -655,7 +678,7 @@
                                     </div>
                                     <div class="wrap-industry-about">
                                         <div class="wrap-industry-about-tittle">
-                                            <p class="Changa-Medium-24 white">Industrial & Chemical</p>
+                                            <h5 class="white">Industrial & Chemical</p>
                                         </div>
                                         <div class="wrap-industry-about-text">
                                             <p class="Roboto-Regular-16 white-feature">we understand the complexity of the factors that come into play, site size to expensive machinery to shift changes that see hundreds of employees.</p>
@@ -665,7 +688,9 @@
                               </div>
                               <div class="swiper-slide">
                                 <div class="wrap-industry">
-                                    <img src="assets/images/main/features/img-3.png" alt="">
+                                    <div class="wrap-industry-img">
+                                        <img src="assets/images/main/features/img-3.png" alt="">
+                                    </div>
                                     <div class="wrap-industry-layer"></div>
                                     <div class="wrap-industry-plus">
                                         <div class="wrap-industry-plus-icon">
@@ -674,7 +699,7 @@
                                     </div>
                                     <div class="wrap-industry-about">
                                         <div class="wrap-industry-about-tittle">
-                                            <p class="Changa-Medium-24 white">Retail & Consumer</p>
+                                            <h5 class="white">Retail & Consumer</p>
                                         </div>
                                         <div class="wrap-industry-about-text">
                                             <p class="Roboto-Regular-16 white-feature">we understand the complexity of the factors that come into play, site size to expensive machinery to shift changes that see hundreds of employees.</p>
@@ -692,19 +717,21 @@
         <div id="process_h">
             <div class="wrap-process d-flex-jus-between">
                 <div class="wrap-process-left">
-                    <div class="social-tittle">
-                        <p class="Roboto-Bold-16 white">Reliable, Effective &Technically Advanced Products!</p>
-                        <h4 class="white">Individually Assess Each Plan And Offer Optimal Solutions For You!</h4 class="white">
+                    <div class="wrap-process-left-child">
+                        <div class="social-tittle">
+                            <p class="Roboto-Bold-16 white">Reliable, Effective &Technically Advanced Products!</p>
+                            <h4 class="white">Individually Assess Each Plan And Offer Optimal Solutions For You!</h4 class="white">
+                        </div>
+                        <button class="btn-icon btn-lg bg-col-white">
+                            <div class="wrap-chevron item-btn bg-col-black">
+                                <span class="icon-chevron-right"></span>
+                            </div>
+                            <div class="text item-btn">
+                                <p class="btn-text black">Meet Our Experts</p>
+                            </div>
+                        </button>
+                        <div class="wrap-process-left-img"></div>
                     </div>
-                    <button class="wrap_about-btn">
-                        <div class="wrap-chevron item-btn">
-                            <span class="icon-chevron-right"></span>
-                        </div>
-                        <div class="text item-btn">
-                            <p class="Roboto-Bold-17 black">Meet Our Experts</p>
-                        </div>
-                    </button>
-                    <div class="wrap-process-left-img"></div>
                 </div>
                 <div class="wrap-process-right ">
                     <div class="wrap-process-right-item d-flex-jus-between">
@@ -778,7 +805,31 @@
                             <div class="case-item-img"></div>
                             <div class="case-item-about">
                                 <div class="case-item-about-tittle">
-                                    <p class="Changa-Medium-24">Floride Chemicals Factory</p>
+                                    <h5>Floride Chemicals Factory</h5>
+                                </div>
+                                <div class="case-item-about-text">
+                                    <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="case-item-plus">
+                                <span class="icon-plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="case-item">
+                            <button class="case-item-inf">
+                                <p class="Roboto-Regular-13 white">Chemicals, Oil & Gas</p>
+                            </button>
+                            <div class="case-item-img"></div>
+                            <div class="case-item-about">
+                                <div class="case-item-about-tittle">
+                                    <h5>Floride Chemicals Factory</h5>
                                 </div>
                                 <div class="case-item-about-text">
                                     <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
@@ -798,7 +849,30 @@
                             <div class="case-item-img"></div>
                             <div class="case-item-about">
                                 <div class="case-item-about-tittle">
-                                    <p class="Changa-Medium-24">Floride Chemicals Factory</p>
+                                    <h5>Floride Chemicals Factory</h5>
+                                </div>
+                                <div class="case-item-about-text">
+                                    <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
+                                        
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="case-item-plus">
+                                <span class="icon-plus"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="case-item">
+                            <button class="case-item-inf">
+                                <p class="Roboto-Regular-13 white">Chemicals, Oil & Gas</p>
+                            </button>
+                            <div class="case-item-img"></div>
+                            <div class="case-item-about">
+                                <div class="case-item-about-tittle">
+                                    <h5>Floride Chemicals Factory</h5>
                                 </div>
                                 <div class="case-item-about-text">
                                     <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
@@ -818,47 +892,7 @@
                             <div class="case-item-img"></div>
                             <div class="case-item-about">
                                 <div class="case-item-about-tittle">
-                                    <p class="Changa-Medium-24">Floride Chemicals Factory</p>
-                                </div>
-                                <div class="case-item-about-text">
-                                    <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="case-item-plus">
-                                <span class="icon-plus"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="case-item">
-                            <button class="case-item-inf">
-                                <p class="Roboto-Regular-13 white">Chemicals, Oil & Gas</p>
-                            </button>
-                            <div class="case-item-img"></div>
-                            <div class="case-item-about">
-                                <div class="case-item-about-tittle">
-                                    <p class="Changa-Medium-24">Floride Chemicals Factory</p>
-                                </div>
-                                <div class="case-item-about-text">
-                                    <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="case-item-plus">
-                                <span class="icon-plus"></span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-cell">
-                        <div class="case-item">
-                            <button class="case-item-inf">
-                                <p class="Roboto-Regular-13 white">Chemicals, Oil & Gas</p>
-                            </button>
-                            <div class="case-item-img"></div>
-                            <div class="case-item-about">
-                                <div class="case-item-about-tittle">
-                                    <p class="Changa-Medium-24">Floride Chemicals Factory</p>
+                                    <h5>Floride Chemicals Factory</h5>
                                 </div>
                                 <div class="case-item-about-text">
                                     <p class="Roboto-Regular-15">We understand that data is the greatest asset when it comes to analyzing and optimizing your supply chain performance.
@@ -904,7 +938,7 @@
                             </p>
                         </div>
                         <div class="reply-select">
-                            <div class="reply-select-item d-flex-al-center-jus-between">
+                            <div class="reply-select-item d-flex-al-center-jus-start">
                                 <p class="changa-me-20 gray-reply">I'm a/an</p>
                                 <select name="expertise" id="expertise" class="changa-me-20" >
                                     <option value="Factor-Owner">Factory Owner</option>
@@ -913,7 +947,7 @@
                                     <option value="Safety-Specialist">Safety Specialist</option>
                                 </select>
                             </div>
-                            <div class="reply-select-item d-flex-al-center-jus-between">
+                            <div class="reply-select-item d-flex-al-center-jus-start">
                                 <p class="changa-me-20 gray-reply">What is your inquiry about? </p>
                                 <select name="industry" id="industry" class="changa-me-20" >
                                     <option value="Mechanical-Engineering">Mechanical Engineering</option>
@@ -943,7 +977,7 @@
                         <input type="text" id="comment" name="comment" placeholder="Additional Details">
                             <label class="Changa-Medium-16-20" for="comment" id="empty-comment">(*)</label>
                             <label class="Changa-Medium-16-20" for="comment" id="valid-comment">(*)</label>
-                        <button class="btn-sub d-flex-al-center-jus-between" type="submit" id="btn_submit">
+                        <button class="btn-icon btn-lg bg-col-black btn-sub  d-flex-al-center-jus-between" type="submit" id="btn_submit">
                             <p>Submit Your Request</p>
                             <div class="chevron">
                                 <span class="icon-chevron-right"></span>
@@ -954,50 +988,52 @@
                 <div class="request-right">
                     <div class="request-right-child">
                         <div class="request-right-child-tittle">
-                            <p class="Changa-Medium-24 white">Serving An Impressive List Of Clients With Expertise!</p>
+                            <h5 class="white">Serving An Impressive List Of Clients With Expertise!</h5>
                         </div>
                         <div class="request-right-child-text">
                             <p class="Roboto-Regular-16 white">Dedication to quality, innovation and a constant objective to serve the global market & decade young industry. </p>
                         </div>
                         <div class="request-right-child-download">
-                            <button class="wrap_about-btn ">
-                                <div class="wrap-chevron item-btn">
+                            <button class="btn-icon btn-lg bg-col-trans">
+                                <div class="wrap-chevron item-btn bg-col-white">
                                     <span class="icon-chevron-right"></span>
                                 </div>
                                 <div class="text item-btn">
-                                    <p class="Roboto-Bold-15 white">Download 2023 Brochure</p>
+                                    <p class="btn-text white">Download 2023 Brochure</p>
                                 </div>
                             </button>
                         </div>
                         <div class="request-right-child-infor">
-                            <button class="wrap_about-btn ">
-                                <div class="wrap-chevron item-btn">
-                                    <span class="icon-phone"></span>
-                                </div>
-                                <div class="text item-btn">
-                                    <p class="Roboto-Bold-14">Emergency Line: (002) 01061245741</p>
-                                </div>
-                            </button>
-                            <button class="wrap_about-btn ">
-                                <div class="wrap-chevron item-btn">
-                                    <span class="icon-location"></span>
-                                </div>
-                                <div class="text item-btn">
-                                    <p class="Roboto-Bold-14">Location: Brooklyn, New York, USA</p>
-                                </div>
-                            </button>
-                            <button class="wrap_about-btn ">
-                                <div class="wrap-chevron item-btn">
-                                    <span class="icon-clock"></span>
-                                </div>
-                                <div class="text item-btn">
-                                    <p class="Roboto-Bold-14">Mon - Fri: 8:00 am - 7:00 pm</p>
-                                </div>
-                            </button>
+                            <ul class="request-right-child-infor-ul">
+                                <li class="request-right-child-infor-item d-flex-al-center-jus-start">
+                                    <div class="wrap-chevron item-btn">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                    <div class="text item-btn">
+                                        <a href="#" class="Roboto-Bold-14">Emergency Line: (002) 01061245741</a>
+                                    </div>
+                                </li>
+                                <li class="request-right-child-infor-item d-flex-al-center-jus-start">
+                                    <div class="wrap-chevron item-btn">
+                                        <span class="icon-location"></span>
+                                    </div>
+                                    <div class="text item-btn">
+                                        <a href="#" class="Roboto-Bold-14">Location: Brooklyn, New York, USA</a>
+                                    </div>
+                                </li>
+                                <li class="request-right-child-infor-item d-flex-al-center-jus-start">
+                                    <div class="wrap-chevron item-btn">
+                                        <span class="icon-clock"></span>
+                                    </div>
+                                    <div class="text item-btn">
+                                        <a href="#" class="Roboto-Bold-14">Mon - Fri: 8:00 am - 7:00 pm</a>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                         <div class="request-right-child-btn d-flex-al-center-jus-center">
-                            <button class="request-contact d-flex-al-center-jus-center">
-                                <p class="Roboto-Bold-15 black">Contact Our Team</p>
+                            <button class="request-contact d-flex-al-center-jus-center btn bg-col-white">
+                                <p class="btn-text black">Contact Our Team</p>
                             </button>
                         </div>
                     </div>
@@ -1010,17 +1046,17 @@
                     <p class="Roboto-Bold-16">Industry Tips & Resources</p>
                     <h4>Recent Articles</h4>
                 </div>
-                <div class="blog-child d-flex-al-center-jus-center">
-                    <div class="blog-item">
-                        <div class="date">
-                            <div class="day">
-                                <p>22</p>
-                            </div>
-                            <div class="moth-year">
-                                <p>Jan 2023</p>
-                            </div>
-                        </div>
+                <div class="blog-child row">
+                    <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="image">
+                            <div class="date">
+                                <div class="day">
+                                    <p>22</p>
+                                </div>
+                                <div class="moth-year">
+                                    <p>Jan 2023</p>
+                                </div>
+                            </div>
                             <img src="assets/images/blog/img-1.png" alt="">
                         </div>
                         <div class="content">
@@ -1035,7 +1071,7 @@
                             <div class="about">
                                 <p>Thematic focuses covered interesting topics of innovation and technology, the importance of Lean in social and environmental management, and government projects aspects...</p>
                             </div>
-                            <a href="assets/html/blog/posts/post-1.html" target="_blank">
+                            <a href="posts/post-1.html" target="_blank">
                                 <button id="news" class="d-flex-al-center-jus-start">
                                     <p>Read More</p>
                                     <div class="greater">
@@ -1045,16 +1081,16 @@
                             </a>
                         </div>
                     </div>
-                    <div class="blog-item">
-                        <div class="date">
-                            <div class="day">
-                                <p>25</p>
-                            </div>
-                            <div class="moth-year">
-                                <p>Jan 2023</p>
-                            </div>
-                        </div>
+                    <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="image">
+                            <div class="date">
+                                <div class="day">
+                                    <p>22</p>
+                                </div>
+                                <div class="moth-year">
+                                    <p>Jan 2023</p>
+                                </div>
+                            </div>
                             <img src="assets/images/blog/img-2.png" alt="">
                         </div>
                         <div class="content">
@@ -1080,16 +1116,16 @@
                             </a>
                         </div>
                     </div>
-                    <div class="blog-item">
-                        <div class="date">
-                            <div class="day">
-                                <p>30</p>
-                            </div>
-                            <div class="moth-year">
-                                <p>Jan 2023</p>
-                            </div>
-                        </div>
+                    <div class="blog-item col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
                         <div class="image">
+                            <div class="date">
+                                <div class="day">
+                                    <p>22</p>
+                                </div>
+                                <div class="moth-year">
+                                    <p>Jan 2023</p>
+                                </div>
+                            </div>
                             <img src="assets/images/blog/img-3.png" alt="">
                         </div>
                         <div class="content">
@@ -1116,10 +1152,10 @@
                     </div>
                 </div>
                 <div class="blog-all text-al-cen">
-                    <p class="Roboto-Bold-15 black">Check All Blog Posts</p>
+                    <p class="btn-text black">Check All Blog Posts</p>
                     <div class="wrap-all d-flex-al-center-jus-center">
                         <a href="assets/html/blog/blog.html">
-                            <button class="all d-flex-al-center-jus-center">
+                            <button class="all btn d-flex-al-center-jus-center">
                                 <span class="icon-plus"></span>
                             </button>
                         </a>
@@ -1137,7 +1173,7 @@
                             <img src="assets/images/logo/logo-Full.png" alt="logo-image">
                         </div>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Company</p>
                         <ul class="list">
                             <li class="list_item">
@@ -1157,7 +1193,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Services</p>
                         <ul class="list">
                             <li class="list_item">
@@ -1180,7 +1216,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-2 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-2 col-lg-4 col-md-4 col-sm-12 col-xs-12">
                         <p>Industries</p>
                         <ul class="list">
                             <li class="list_item">
@@ -1203,7 +1239,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="top-item col-xl-3 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="top-item col-xl-3 col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <p>Quick Contact</p>
                         <p class="address .text-al-left">2307 Beverley Rd Brooklyn, New York 11226 United States.</p>
                         <button class="d-flex-al-center-jus-start icon email">
